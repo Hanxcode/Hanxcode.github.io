@@ -12,19 +12,19 @@ const customElements = [
   'mjx-container', 'mjx-assistive-mml', 'math', 'maction', 'maligngroup', 'malignmark', 'menclose', 'merror', 'mfenced', 'mfrac', 'mi', 'mlongdiv', 'mmultiscripts', 'mn', 'mo', 'mover', 'mpadded', 'mphantom', 'mroot', 'mrow', 'ms', 'mscarries', 'mscarry', 'mscarries', 'msgroup', 'mstack', 'mlongdiv', 'msline', 'mstack', 'mspace', 'msqrt', 'msrow', 'mstack', 'mstack', 'mstyle', 'msub', 'msup', 'msubsup', 'mtable', 'mtd', 'mtext', 'mtr', 'munder', 'munderover', 'semantics', 'math', 'mi', 'mn', 'mo', 'ms', 'mspace', 'mtext', 'menclose', 'merror', 'mfenced', 'mfrac', 'mpadded', 'mphantom', 'mroot', 'mrow', 'msqrt', 'mstyle', 'mmultiscripts', 'mover', 'mprescripts', 'msub', 'msubsup', 'msup', 'munder', 'munderover', 'none', 'maligngroup', 'malignmark', 'mtable', 'mtd', 'mtr', 'mlongdiv', 'mscarries', 'mscarry', 'msgroup', 'msline', 'msrow', 'mstack', 'maction', 'semantics', 'annotation', 'annotation-xml',
 ];
 
-const baseUrl='https://cotenite.github.io'
+const baseUrl='https://hanxcode.github.io/'
 
 const RSS = {
-  title: 'CoteNite的咖啡屋',
+  title: 'Hanxcode',
   baseUrl,
-  copyright: 'Copyright (c) 2025-present, 粥里有勺糖',
+  copyright: 'Copyright (c) 2025-present',
 }
 
 // 你的基础 VitePress 配置对象，不包含由 withSidebar 生成的 sidebar
 const baseVitePressConfig = {
   base,
   lastUpdated: true,
-  title: "CoteNite的咖啡屋",
+  title: "Hanxcode",
   description: "我的想学习小站",
   head: [
     ['link', { rel: 'icon', href: `${base}/header1.png` }]
@@ -59,7 +59,7 @@ const baseVitePressConfig = {
       { text: '<strong>主页</strong>', link: '/' },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/CoteNite' }
+      { icon: 'github', link: 'https://github.com/Hanxcode' }
     ],
     // themeConfig.sidebar 将由 withSidebar 生成和添加
   },
