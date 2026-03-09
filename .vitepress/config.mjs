@@ -57,6 +57,12 @@ const baseVitePressConfig = {
     },
     nav: [
       { text: '<strong>主页</strong>', link: '/' },
+
+
+
+
+
+
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/hanxcode' }
