@@ -2,21 +2,13 @@
 layout: home
 hero:
   name: Hanxcode
-#  text: 前排出售各类咖啡☕
-#  tagline: CoteNite个人的学习&生活站点
+  text: Hanxcode的学习记录
+  tagline: Hanxcode个人的学习&生活站点
   actions:
     - theme: brand
-      text: 来杯冰美式
+      text: 后端学习
       link: /back-end/0.前言.md
-    - theme: brand
-      text: 看看老板
-      link: /aboutMe/aboutMe.md
-    - theme: alt
-      text: 来杯热美式
-      link: /front-end/1.前言.md
-    - theme: alt
-      text: 来杯热可可
-      link: /om/1.前言.md
+
 features:
   - title: 日常学习
     icon: 📝
