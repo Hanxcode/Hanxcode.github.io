@@ -12,13 +12,6 @@ const customElements = [
   'mjx-container', 'mjx-assistive-mml', 'math', 'maction', 'maligngroup', 'malignmark', 'menclose', 'merror', 'mfenced', 'mfrac', 'mi', 'mlongdiv', 'mmultiscripts', 'mn', 'mo', 'mover', 'mpadded', 'mphantom', 'mroot', 'mrow', 'ms', 'mscarries', 'mscarry', 'mscarries', 'msgroup', 'mstack', 'mlongdiv', 'msline', 'mstack', 'mspace', 'msqrt', 'msrow', 'mstack', 'mstack', 'mstyle', 'msub', 'msup', 'msubsup', 'mtable', 'mtd', 'mtext', 'mtr', 'munder', 'munderover', 'semantics', 'math', 'mi', 'mn', 'mo', 'ms', 'mspace', 'mtext', 'menclose', 'merror', 'mfenced', 'mfrac', 'mpadded', 'mphantom', 'mroot', 'mrow', 'msqrt', 'mstyle', 'mmultiscripts', 'mover', 'mprescripts', 'msub', 'msubsup', 'msup', 'munder', 'munderover', 'none', 'maligngroup', 'malignmark', 'mtable', 'mtd', 'mtr', 'mlongdiv', 'mscarries', 'mscarry', 'msgroup', 'msline', 'msrow', 'mstack', 'maction', 'semantics', 'annotation', 'annotation-xml',
 ];
 
-const baseUrl='https://hanxcode.github.io'
-
-const RSS = {
-  title: 'hanxcode',
-  baseUrl,
-  copyright: 'Copyright (c) 2025-present',
-}
 
 // 你的基础 VitePress 配置对象，不包含由 withSidebar 生成的 sidebar
 const baseVitePressConfig = {
@@ -56,8 +49,9 @@ const baseVitePressConfig = {
       }
     },
     nav: [
-      { text: '<strong>主页</strong>', link: '/' },
+
       { text: '<strong>后端</strong>', link: '/backend/首页.md' },
+      { text: '<strong>主页</strong>', link: '/' },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/hanxcode' }
