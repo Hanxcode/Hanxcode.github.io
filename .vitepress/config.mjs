@@ -5,7 +5,7 @@ import { withMermaid } from 'vitepress-plugin-mermaid';
 import mathjax3 from 'markdown-it-mathjax3';
 import {RssPlugin} from "vitepress-plugin-rss";
 
-const base = '/blog/';
+const base = '/';
 
 // 你的 MathJax 自定义元素列表
 const customElements = [

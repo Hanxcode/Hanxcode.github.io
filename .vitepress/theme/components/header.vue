@@ -5,7 +5,7 @@
 <template>
   <img
       class="VPImage image-src"
-      src="../../../public/header1.png"
+      src="../../../public/header1.jpg"
       alt=""
   >
 </template>
