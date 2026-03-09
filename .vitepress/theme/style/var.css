@@ -1,0 +1,37 @@
+:root {
+    --vp-c-brand-1: rgb(95, 159,  183);
+    --vp-c-brand-2: rgb(84, 148, 197);
+    --vp-c-brand-3: rgb(103, 193, 243);
+
+}
+
+.dark {
+    --vp-c-brand-1: rgb(166, 222, 253);
+    --vp-c-brand-2: rgb(80, 160, 206);
+    --vp-c-brand-3: rgb(95, 159, 197);
+
+}
+
+:root {
+    /* hero标题渐变色 */
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e8d7f6, #2babd3);
+
+    /*hero logo背景渐变色 */
+    --vp-home-hero-image-background-image: linear-gradient(0deg, white , black);
+    --vp-home-hero-image-filter: blur(40px);
+}
+
+.vp-doc a{
+    text-decoration: none;
+}
+
+
+
+.medium-zoom-overlay {
+    z-index: 30;
+}
+
+.medium-zoom-image {
+    z-index: 9999 !important;/* 给的值是21，但是实测盖不住，直接999 */
+}
