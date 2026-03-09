@@ -57,12 +57,7 @@ const baseVitePressConfig = {
     },
     nav: [
       { text: '<strong>主页</strong>', link: '/' },
-
-
-
-
-
-
+      { text: '<strong>后端</strong>', link: '/backend/首页.md' },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/hanxcode' }
@@ -106,15 +101,15 @@ const baseVitePressConfig = {
 
 // 你的侧边栏扫描配置数组
 const sidebarConfigs = [
-  // {
-  //   documentRootPath: '',
-  //   scanStartPath: 'story',
-  //   basePath: '/story/',
-  //   resolvePath: '/story/',
-  //   rootGroupText: '随笔几则',
-  //   removePrefixAfterOrdering: true,
-  //   prefixSeparator: '.',
-  // },
+  {
+    documentRootPath: '',
+    scanStartPath: 'backend',
+    basePath: '/backend/',
+    resolvePath: '/backend/',
+    rootGroupText: '后端学习笔记',
+    removePrefixAfterOrdering: true,
+    prefixSeparator: '.',
+  },
 ];
 
 // 使用 withSidebar 包装基础配置，生成包含侧边栏的配置对象

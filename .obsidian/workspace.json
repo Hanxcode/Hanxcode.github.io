@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/首页.md",
+                "file": "backend/java/Java学习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "首页"
+              "title": "Java学习"
             }
           }
         ]
@@ -186,8 +186,10 @@
   },
   "active": "277fe951e0d35572",
   "lastOpenFiles": [
-    "index.md",
     "backend/首页.md",
+    "backend/java/Java学习.md",
+    "backend/java",
+    "index.md",
     "backend",
     "public/header1.jpg",
     "ObsidianTest.md"
