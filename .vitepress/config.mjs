@@ -12,10 +12,10 @@ const customElements = [
   'mjx-container', 'mjx-assistive-mml', 'math', 'maction', 'maligngroup', 'malignmark', 'menclose', 'merror', 'mfenced', 'mfrac', 'mi', 'mlongdiv', 'mmultiscripts', 'mn', 'mo', 'mover', 'mpadded', 'mphantom', 'mroot', 'mrow', 'ms', 'mscarries', 'mscarry', 'mscarries', 'msgroup', 'mstack', 'mlongdiv', 'msline', 'mstack', 'mspace', 'msqrt', 'msrow', 'mstack', 'mstack', 'mstyle', 'msub', 'msup', 'msubsup', 'mtable', 'mtd', 'mtext', 'mtr', 'munder', 'munderover', 'semantics', 'math', 'mi', 'mn', 'mo', 'ms', 'mspace', 'mtext', 'menclose', 'merror', 'mfenced', 'mfrac', 'mpadded', 'mphantom', 'mroot', 'mrow', 'msqrt', 'mstyle', 'mmultiscripts', 'mover', 'mprescripts', 'msub', 'msubsup', 'msup', 'munder', 'munderover', 'none', 'maligngroup', 'malignmark', 'mtable', 'mtd', 'mtr', 'mlongdiv', 'mscarries', 'mscarry', 'msgroup', 'msline', 'msrow', 'mstack', 'maction', 'semantics', 'annotation', 'annotation-xml',
 ];
 
-const baseUrl='https://hanxcode.github.io/'
+const baseUrl='https://hanxcode.github.io'
 
 const RSS = {
-  title: 'Hanxcode',
+  title: 'hanxcode',
   baseUrl,
   copyright: 'Copyright (c) 2025-present',
 }
@@ -24,10 +24,10 @@ const RSS = {
 const baseVitePressConfig = {
   base,
   lastUpdated: true,
-  title: "Hanxcode",
+  title: "hanxcode",
   description: "我的想学习小站",
   head: [
-    ['link', { rel: 'icon', href: `${base}/header1.png` }]
+    ['link', { rel: 'icon', href: `${base}/header1.jpg` }]
   ],
   // vite:{
   //   plugins: [RssPlugin(RSS)]
@@ -59,7 +59,7 @@ const baseVitePressConfig = {
       { text: '<strong>主页</strong>', link: '/' },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Hanxcode' }
+      { icon: 'github', link: 'https://github.com/hanxcode' }
     ],
     // themeConfig.sidebar 将由 withSidebar 生成和添加
   },
