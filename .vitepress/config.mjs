@@ -20,7 +20,7 @@ const baseVitePressConfig = {
   title: "hanxcode",
   description: "我的想学习小站",
   head: [
-    ['link', { rel: 'icon', href: `${base}/header1.jpg` }]
+    ['link', { rel: 'icon', href: `https://github.com/Hanxcode/image-host/blob/main/header1-modified.png?raw=true` }]
   ],
   // vite:{
   //   plugins: [RssPlugin(RSS)]
