@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "ObsidianTest.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "ObsidianTest"
             }
           }
         ],
@@ -202,7 +202,7 @@
   "active": "d407e378e3920f26",
   "lastOpenFiles": [
     "index.md",
-    "未命名.md",
+    "ObsidianTest.md",
     "未命名",
     "public/header1.jpg"
   ]
