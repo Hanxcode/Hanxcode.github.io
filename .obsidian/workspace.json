@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "agent/SpringAI/Spring AI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Spring AI"
             }
           }
         ]
@@ -184,8 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "62ffafe2d5e511b0",
+  "active": "277fe951e0d35572",
   "lastOpenFiles": [
+    "index.md",
+    "agent/SpringAI/Spring AI.md",
     "agent/SpringAI",
     "未命名",
     "agent",
@@ -194,7 +196,6 @@
     "backend/首页.md",
     "node_modules/@algolia/autocomplete-plugin-algolia-insights/README.md",
     "node_modules/@algolia/autocomplete-core/README.md",
-    "index.md",
     "backend/java",
     "backend",
     "ObsidianTest.md"
