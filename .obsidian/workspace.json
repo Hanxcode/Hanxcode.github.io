@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "agent/SpringAI/SpringAI-对话机器人.md",
+                "file": "agent/SpringAI/SpringAI-哄哄模拟器.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SpringAI-对话机器人"
+              "title": "SpringAI-哄哄模拟器"
             }
           }
         ]
@@ -184,9 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "62ffafe2d5e511b0",
+  "active": "277fe951e0d35572",
   "lastOpenFiles": [
     "agent/SpringAI/大模型应用开发.md",
+    "agent/SpringAI/SpringAI-哄哄模拟器.md",
     "agent/SpringAI/SpringAI-对话机器人.md",
     "backend/首页.md",
     "backend/java/Java学习.md",
