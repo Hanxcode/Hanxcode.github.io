@@ -32,3 +32,8 @@
 2. 不能以数字开头
 3. 不能使用关键字：True、False、None、and、or、if、else、elif、for、while等
 4. 严格区分大小写，比如：age、Age、AGE是三个变量
+
+命名规范（变量）：
+1. 见名知意
+2. 多个部分使用下划线连接
+3. 英文字母
