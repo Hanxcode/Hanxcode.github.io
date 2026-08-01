@@ -193,6 +193,9 @@ match subject:
     case _:
         <action_wildcard>
 ```
-
+执行流程：
+1. 首先计算match指定的表达式的值
+2. 从上到下依次和case后面的值进行匹配，匹配正确，就执行对应语句
+3. 如果前面所有的case都没有匹配上，就会执行默认的case __
 ## 循环
 
