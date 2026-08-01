@@ -205,3 +205,10 @@ while 条件表达式:
     循环体语句1
     循环体语句2
 ```
+
+```
+while <expr>:
+    <statement(s)>
+else:
+    <additional_statement(s)>
+```
