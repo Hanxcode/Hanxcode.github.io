@@ -182,6 +182,17 @@ else:
 ### match...case
 
 结构模式匹配就是用一个清晰的模板去精确的匹配数据的结构和内容，匹配成功后则执行响应的操作
+```
+match subject:
+    case <pattern_1>:
+        <action_1>
+    case <pattern_2>:
+        <action_2>
+    case <pattern_3>:
+        <action_3>
+    case _:
+        <action_wildcard>
+```
 
 ## 循环
 
