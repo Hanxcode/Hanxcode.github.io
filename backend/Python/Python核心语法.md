@@ -212,3 +212,4 @@ while <expr>:
 else:
     <additional_statement(s)>
 ```
+while循环是通过条件表达式，来控制是否要进行下一次循环
