@@ -199,3 +199,11 @@ match subject:
 3. 如果前面所有的case都没有匹配上，就会执行默认的case __
 ## 循环
 
+### While
+```
+while 条件表达式:
+    循环体语句1
+    循环体语句2
+else:
+    <additional_statement(s)>
+```
