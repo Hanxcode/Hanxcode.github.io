@@ -204,6 +204,4 @@ match subject:
 while 条件表达式:
     循环体语句1
     循环体语句2
-else:
-    <additional_statement(s)>
 ```
