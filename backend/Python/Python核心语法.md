@@ -406,3 +406,5 @@ s2 = set()
 ```
 
 ### 字典（dict）
+
+Python中的字典（dict），里面存着的是键值对（key ：value）类型的数据，可以根据键（key）找到对应的值（value）
