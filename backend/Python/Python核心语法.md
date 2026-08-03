@@ -416,7 +416,9 @@ Python中的字典（dict），里面存着的是键值对（key ：value）类�
 ```
 # 定义字典 
 字典名称 = {key: value, key:value, key:value ...} 
+
 dict1 = {"王林": 675, "李慕婉": 608, "许立国": 478, ...}
+
 # 定义空字典 
 字典名称 = {} 
 字典名称 = dict() 
@@ -425,5 +427,7 @@ dict2 = {} dict3 = dict()
 
 # 根据key获取value 
 值 = 字典名称[key]
+
 score = dict1["李思"]
 ```
+注意：字典（dict）中的 value 可以是任何类型的数据，而 key 不能为可变类型（如：不能为 列表 list、集合 set 、字典 dict）
