@@ -399,7 +399,10 @@ s2 = set()
 |difference()|求取两个集合的差集（包含在第一个集合但不包含在第二个集合的元素）|`s1.difference(s2)`|
 |union()|求取两个集合的并集|`s1.union(s2)`|
 |intersection()|求取两个集合的交集|`s1.intersection(s2)`|
+集合推导式
 
-
+```
+{表达式 for 元素 in 列表 if 条件}
+```
 
 ### 字典（dict）
