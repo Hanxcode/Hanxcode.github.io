@@ -408,3 +408,22 @@ s2 = set()
 ### 字典（dict）
 
 Python中的字典（dict），里面存着的是键值对（key ：value）类型的数据，可以根据键（key）找到对应的值（value）
+
+字典：使用键值对（key ：value）来存储数据，每一个键都对应一个值，通过键（key）可以快速找到对应的值（value）。
+特点：
+* 键值对（key ：value）存储、键（key）不能重复、可修改
+定义：
+```
+# 定义字典 
+字典名称 = {key: value, key:value, key:value ...} 
+dict1 = {"王林": 675, "李慕婉": 608, "许立国": 478, ...}
+# 定义空字典 
+字典名称 = {} 
+字典名称 = dict() 
+
+dict2 = {} dict3 = dict()
+
+# 根据key获取value 
+值 = 字典名称[key]
+score = dict1["李思"]
+```
