@@ -505,7 +505,6 @@ out_line()
 * 函数定义是如果有多个参数，多个参数之间使用逗号分隔
 * return 语句只有返回功能，没有输出打印功能，如果要输出，需要结合 print（）函数来实现
 
-
 #### 函数说明文档
 
 函数的说明文档（Docstring）是写在函数开头，用三个引号包裹的字符串，用于解释函数的功能、参数、返回值等信息，方便调用者清楚函数的具体作用及细节
@@ -513,5 +512,27 @@ out_line()
 查看函数说明文档：
 * 使用 help 函数，比如：help（circle_area_len）
 * 鼠标悬浮在函数上，自动展示
+
+#### 函数的嵌套调用
+
+嵌套函数调用值得是在一个函数中，又调用了另外一个函数
+
+```
+def function_a():
+ print("a ... before")
+ function_b()
+ print("a ... after") 
+ 
+def function_b():
+  print("b ... before") 
+  function_c()
+  print("b ... after") 
+  
+def function_c():
+   print("c ...")
+   
+   
+function_a()
+```
 
 ### 函数进阶
