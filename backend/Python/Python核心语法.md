@@ -613,7 +613,11 @@ data = calc_data(100, 200, 300, 400, round=2, count=0)
 print(data) 
  
 data = calc_data(33, 11, 28, 91, 32, 75, 49) 
- print(data)
+print(data)
 ```
+注意：
+* 参数是以“ 键 = 值 ” 形式传递的关键字参数，这些“ 键 = 值 ” 参数都会被 kwargs 接受，并合并封装为一个字典类型
+* kwargs 只是约定俗成的变量名，并不是关键字，这里可以使用任何合法的变量名（如 **options）
+
 
 #### 匿名函数
