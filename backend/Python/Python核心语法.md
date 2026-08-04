@@ -702,7 +702,13 @@ def calc_data(scores: list[int]) -> tuple[int, int, float]:
 
 #### 自定义模块
 
+`__name__`是Python中非常重要的内置变量，表示的是当前模块的名称。
+
+当模块直接运行时：`__name__`的值为`"__main__"`（`if __name__ == "__main__"`） 
+当模块被导入时：`__name__`等于模块的文件名(不含`.py`后缀)
+
 _ _ _all_ _ _ ：是一个模块级别的特殊变量，用于指定 from 模块名 import  * 时会导入哪些功能（* 通配了哪些功能）
 
-_ _ _all_ _ _  控制的是 from...import  * 时，要导入的go
+_ _ _all_ _ _  控制的是 from...import  * 时，要导入的功能，并不会影响直接导入具体的功能
+
 #### 软件包（package）
