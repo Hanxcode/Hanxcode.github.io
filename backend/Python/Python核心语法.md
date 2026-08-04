@@ -681,3 +681,5 @@ def calc_data(scores: list[int]) -> tuple[int, int, float]:
  avg_v = sum(scores) / len(scores)
  return max_v, min_v, avg_v
 ```
+
+
