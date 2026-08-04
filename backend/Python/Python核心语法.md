@@ -672,3 +672,12 @@ goods: tuple[str,int,int] = ("手机", 5999, 1)
 类型推断是指Python解释器自动推断出变量、表达式或函数返回值的数据类型的能留，而无需开发者显式声明
 
 注意：在对变量进行直接赋值，或者涉及到变量的原酸、容器的推到等厂家时，解释器会自动推导出变量的类型
+
+**函数类型注解**
+```
+def calc_data(scores: list[int]) -> tuple[int, int, float]:
+ max_v = max(scores)
+ min_v = min(scores)
+ avg_v = sum(scores) / len(scores)
+ return max_v, min_v, avg_v
+```
