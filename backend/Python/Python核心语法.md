@@ -716,4 +716,12 @@ _ _ _all_ _ _  控制的是 from...import  * 时，要导入的功能，并不�
 包：本质就是一个文件夹，该文件夹中可以包含若干python模块（.py文件），文件夹下还包含了一个`__init__.py`
 作用：模块文件较多时，用来管理多个模块。（包的本质也是一个模块）
 
-包的导入方式
+##### 包的导入方式
+
+| 导入形式                     | 代码样例                                      | 调用方式           | 调用示例                            |
+| ------------------------ | ----------------------------------------- | -------------- | ------------------------------- |
+| `import 包名.模块名`          | `import utils.my_fun`                     | 包名 . 模块名 . 功能名 | `utils.my_fun.log_separator1()` |
+| `from 包名 import 模块名`     | `from utils import my_fun`                | 模块名 . 功能名      | `my_fun.log_separator1()`       |
+| `from 包名 import *`       | `from utils import *`                     | 模块名 . 功能名      | `my_fun.log_separator1()`       |
+| `from 包名.模块名 import 功能名` | `from utils.my_fun import log_separator1` | 功能名            | `log_separator1()`              |
+| `from 包名.模块名 import *`   | `from utils.my_fun import *`              | 功能名            | `log_separator1()`              |
