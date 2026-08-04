@@ -666,3 +666,7 @@ phones: set[str] = {"13309091111", "15209109121"}
 options: dict[str, int] = {"count": 0, "total": 0} 
 goods: tuple[str,int,int] = ("手机", 5999, 1)
 ```
+
+#### 类型推断
+
+类型推断是指Python解释器自动推断出变量、表达式或函数返回值的数据类型d
