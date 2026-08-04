@@ -578,7 +578,7 @@ global关键字用于明确的告诉Python解释器，在函数重要使用全�
 
 不定长参数也叫可变参数，用于函数定义及调用时参数个数不确定（0个或多个）的场景
 
-**不定长参数 - 位置传递（* args）**
+###### 不定长参数 - 位置传递（* args）
 ```
 # 定义函数 
 def calc_data(*args): pass 
@@ -595,5 +595,25 @@ data = calc_data(100, 200, 300, 400, 500)
 * 传递的所有匹配的位置参数都会被 args 变量收集，这些参数会合并封装为一个元组，args 是元组类型（注意并不会封装关键字参数）
 * args只是约定俗成的变量名，并不是关键字，这里可以使用任何合法的变量名（如 * data）
 
+###### 不定长参数 - 关键字传递（** kwargs）
+
+```
+# 定义函数 
+def calc_data(*args, **kwargs):
+ min_data = min(args)
+ max_data = max(args)
+ avg_data = sum(args) / len(args) 
+ 
+ if kwargs.get('round'):
+  avg_data = round(avg_data, kwargs.get('round')) 
+  
+ return min_data, max_data, avg_data 
+ 
+data = calc_data(100, 200, 300, 400, round=2, count=0) 
+print(data) 
+ 
+data = calc_data(33, 11, 28, 91, 32, 75, 49) 
+ print(data)
+```
 
 #### 匿名函数
