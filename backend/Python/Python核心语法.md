@@ -647,3 +647,10 @@ print(add(100, 200))
 命名函数与匿名函数的选择？
 * 建议使用匿名函数的情况，函数逻辑简单，只在以恶搞地方调用（常作为高阶函数的参数）
 * 建议使用命名函数的情况：函数逻辑复杂，需要多步操作，需要多个地方重复使用或需要加文档说明的场景
+
+### 类型注解
+
+类型注解是Python中的一种语法特性，用于明确标识变量、函数参数和返回值的数据类型，从而使代码更清晰、更安全、更易维护
+```
+# 定义变量 a: int = 695 score: float = 98.5 hobby: str = "Python" flag: bool = True pic: None = None names: list[str] = ["A", "C", "E"] phones: set[str] = {"13309091111", "15209109121"} options: dict[str, int] = {"count": 0, "total": 0} goods: tuple[str,int,int] = ("手机", 5999, 1)
+```
