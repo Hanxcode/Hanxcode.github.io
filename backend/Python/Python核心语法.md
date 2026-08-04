@@ -683,3 +683,10 @@ def calc_data(scores: list[int]) -> tuple[int, int, float]:
 ```
 
 
+### 模块
+
+Python模块（module）：一个.py文件就是一个模块，模块是Python程序的基本组织单位。在模块中可以定义变量、函数、类，以及可执行的代码
+
+导入模块
+自定义模块
+软件包
