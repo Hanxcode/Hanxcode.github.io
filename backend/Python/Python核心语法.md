@@ -702,6 +702,7 @@ def calc_data(scores: list[int]) -> tuple[int, int, float]:
 
 #### 自定义模块
 
+_ _ _all_ _ _ ：是一个模块级别的特殊变量，用于指定 from 模块名 import  * 时会导入哪些功能（* 通配了哪些功能）
 
-
+_ _ _all_ _ _  控制的是 from...import  * 时，要导入的go
 #### 软件包（package）
