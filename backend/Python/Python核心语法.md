@@ -685,8 +685,8 @@ def calc_data(scores: list[int]) -> tuple[int, int, float]:
 
 ### 模块
 
-Python模块（module）：一个.py文件就是一个模块，模块是Python程序的基本组织单位。在模块中可以定义变量、函数、类，以及可执行的代码
-
+模块就是一个Python文件（.py），其中包含了变量、函数、类，以及可执行的代码
+作用：提高代码复用性，降低开发门槛
 #### 导入模块
 
 在使用模块中提供的功能之前，必须得先导入，再使用
@@ -700,6 +700,8 @@ Python模块（module）：一个.py文件就是一个模块，模块是Python�
 | `from 模块名 import 功能名 as 别名` | `from random import randint as rint` | 别名        | `rint(10, 100)`           |
 | `from 模块名 import *`         | `from random import *`               | 功能名       | `randint(10, 100)`        |
 
-
 #### 自定义模块
+
+
+
 #### 软件包（package）
