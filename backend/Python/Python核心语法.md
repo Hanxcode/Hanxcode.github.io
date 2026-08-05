@@ -765,6 +765,32 @@ print(c1.__dict__)
 ```
 说明：`__dict__`是Python中用户自定义类实例的一个特殊属性，用于字典形式存储对象的属性
 
+
+定义类的语法：（定义类式指定实例属性）
+```
+# 定义类 
+class 类名:
+ def __init__(self, 参数列表):
+   self.属性名 = 参数值 
+   self.属性名 = 参数值 
+  
+# 创建对象 
+对象名 = 类名(参数列表)
+```
+说明：定义在类的外面称之为函数，定义在类中的函数称之为方法
+`se`
+```
+# 定义类 
+class Car:
+  def __init__(self, c_brand, c_name, c_price):
+    self.brand = c_brand
+    self.name = c_name
+    self.price = c_price 
+
+# 创建对象 
+c1 = Car("BMW", "X5", 500000) 
+print(c1.__dict__)
+```
 #### 实例方法
 #### 魔法方法
 #### 实例属性与类属性
