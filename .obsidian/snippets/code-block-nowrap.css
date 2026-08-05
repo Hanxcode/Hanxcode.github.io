@@ -1,0 +1,8 @@
+/* 代码块禁止自动换行 */
+.markdown-source-view.mod-cm6 .cm-line {
+    white-space: pre !important;
+}
+
+.markdown-preview-view pre code {
+    white-space: pre !important;
+}
