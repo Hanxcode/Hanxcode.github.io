@@ -729,3 +729,12 @@ _ _ _all_ _ _  控制的是 from...import  * 时，要导入的功能，并不�
 | `from 包名 import *`       | `from utils import *`                     | 模块名 . 功能名      | `my_fun.log_separator1()`       |
 | `from 包名.模块名 import 功能名` | `from utils.my_fun import log_separator1` | 功能名            | `log_separator1()`              |
 | `from 包名.模块名 import *`   | `from utils.my_fun import *`              | 功能名            | `log_separator1()`              |
+
+
+## 面向对象
+
+### 面向对象基础
+
+
+
+### 面向对象高级
