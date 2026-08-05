@@ -56,7 +56,7 @@
 字符：是文本世界的基本单位，一个字母，一个数字，一个标点符号、一个汉字等都是一个字符
 字符串的三种定义方式：
 
-```
+```python
 # 双引号定义 
 s1 = "Hello" 
 
@@ -146,7 +146,7 @@ print语句（函数）的功能就是将数据输出到控制台，具体语法
 ### if条件判断
 场景：只有满足指定条件，才会执行对应的代码逻辑
 
-```
+```python
 # if条件判断基本格式 
 if 要判断的条件: 
    条件成立时，要执行对应的操作
@@ -155,7 +155,7 @@ if 要判断的条件:
 
 注意：Python中是通过缩进来描述代码的归属的，归属于 if 代码块的语句，需要在前方缩进4个空格（按Tab键Pycharm会自动转为空格）
 
-```
+```python
 # if...else 结构 
 
 if 要判断的条件: 
@@ -164,7 +164,7 @@ else:
     条件不成立时，执行的操作2
 ```
 
-```
+```python
 # if...elif...else结构 
 
 if 要判断的条件1: 
@@ -182,7 +182,7 @@ else:
 ### match...case
 
 结构模式匹配就是用一个清晰的模板去精确的匹配数据的结构和内容，匹配成功后则执行响应的操作
-```
+```python
 match subject:
     case <pattern_1>:
         <action_1>
@@ -202,13 +202,13 @@ match subject:
 
 ### While循环
 
-```
+```python
 while 条件表达式:
     循环体语句1
     循环体语句2
 ```
 
-```
+```python
 while <expr>:
     <statement(s)>
 else:
@@ -219,7 +219,7 @@ while循环是通过条件表达式，来控制是否要进行下一次循环
 ### for循环
 
 while循环是通过条件表达式来控制是否要进行下一次循环的。而for循环，本质是一种轮询遍历机制，对一批内容进行逐个处理
-```
+```python
 for 元素 in 待处理数据集:
     循环体代码（对元素进行处理）
 else:
@@ -254,7 +254,7 @@ else:
 
 ### 嵌套循环
 
-```
+```python
 # 嵌套循环结构
 for 元素 in 待处理数据集1:
     循环体代码1
@@ -335,7 +335,7 @@ for 元素 in 待处理数据集1:
 * 可以存储不同类型的元素
 * 元素可以重复、有序、**不可以修改**（支持索引访问、切片）
 定义：
-```
+```python
 # 定义元组 
 
 元组名称 = (元素1, 元素2, ...) 
@@ -357,7 +357,7 @@ for 元素 in 待处理数据集1:
 组包（Packing）：将多个值合并到一个容器（元组、列表）中
 解包（Unpacking）：将容器（元组、列表）解开成独立的元素，分别赋值给多个变量
 
-```
+```python
 # 定义元组，组包 
 t1 = (5, 7, 9, 1) 
 
@@ -379,7 +379,7 @@ s, *o = t2 # s为5, o为[7, 9, 1]
 
 集合（set）是一种无序的、不可重复的、可修改的数据容器
 定义：
-```
+```python
 # 定义集合 
 s1 = {"C", "D", "X", "T", "O", "U"} 
 
@@ -401,7 +401,7 @@ s2 = set()
 |intersection()|求取两个集合的交集|`s1.intersection(s2)`|
 集合推导式
 
-```
+```python
 {表达式 for 元素 in 列表 if 条件}
 ```
 
@@ -413,7 +413,7 @@ Python中的字典（dict），里面存着的是键值对（key ：value）类�
 特点：
 * 键值对（key ：value）存储、键（key）不能重复、可修改
 定义：
-```
+```python
 # 定义字典 
 字典名称 = {key: value, key:value, key:value ...} 
 
@@ -472,7 +472,7 @@ score = dict1["李思"]
 #### 函数定义
 
 函数的定义与调用：
-```
+```python
 # 定义函数模板 
 def 函数名(参数列表): 
 函数体 
@@ -483,7 +483,7 @@ return 返回值
 函数名(参数)
 ```
 
-```
+```python
 # 定义函数示例 
 def out_line():
  print('----------------------------------------') 
@@ -518,7 +518,7 @@ out_line()
 嵌套函数调用值得是在一个函数中，又调用了另外一个函数
 函数调用遵循栈结构，最后被调用的函数最先返回 LIFO （Last In First Out，后进先出）
 
-```
+```python
 def function_a():
  print("a ... before")
  function_b()
@@ -580,7 +580,7 @@ global关键字用于明确的告诉Python解释器，在函数重要使用全�
 
 ###### 不定长参数 - 位置传递（* args）
 ---->元组，适用于处理数据不确定的数据
-```
+```python
 # 定义函数 
 def calc_data(*args): pass 
 
@@ -599,7 +599,7 @@ data = calc_data(100, 200, 300, 400, 500)
 ###### 不定长参数 - 关键字传递（** kwargs）
 ---->字典，适用于数量不确定的选项（函数的配置参数，用来定制函数的行为）
 
-```
+```python
 # 定义函数 
 def calc_data(*args, **kwargs):
  min_data = min(args)
@@ -630,7 +630,7 @@ print(data)
 #### 匿名函数
 
 匿名函数指的是没有名称的哈数，需要通过lambda表达式来声明函数，可以简化简单函数的编写（单行表达式）
-```
+```python
 # 定义匿名函数 
 lambda 参数列表: 函数体 
 
@@ -651,7 +651,7 @@ print(add(100, 200))
 ### 类型注解
 
 类型注解是Python中的一种语法特性，用于明确标识变量、函数参数和返回值的数据类型，从而使代码更清晰、更安全、更易维护
-```
+```python
 # 定义变量 
 
 a: int = 695 
@@ -674,7 +674,7 @@ goods: tuple[str,int,int] = ("手机", 5999, 1)
 注意：在对变量进行直接赋值，或者涉及到变量的原酸、容器的推到等厂家时，解释器会自动推导出变量的类型
 
 **函数类型注解**
-```
+```python
 def calc_data(scores: list[int]) -> tuple[int, int, float]:
  max_v = max(scores)
  min_v = min(scores)
@@ -738,7 +738,7 @@ _ _ _all_ _ _  控制的是 from...import  * 时，要导入的功能，并不�
 #### 类与对象
 
 定义类的语法：
-```
+```python
 # 定义类 
 class 类名:
     pass 
@@ -751,7 +751,7 @@ class 类名:
 ```
 说明：类名的命名规范，遵循大驼峰命名法，每个单词的首字母都是大写，单词之间没有分隔符，比如：UserInfo 、UserAccount
 
-```
+```python
 # 定义类 
 class Car:
    pass 
@@ -767,7 +767,7 @@ print(c1.__dict__)
 
 
 定义类的语法：（定义类式指定实例属性）
-```
+```python
 # 定义类 
 class 类名:
  def __init__(self, 参数列表):
@@ -780,7 +780,7 @@ class 类名:
 说明：定义在类的外面称之为函数，定义在类中的函数称之为方法
 `self`：方法的第一个参数，表示当前创建的实例对象
 `__init__`：初始化方法，对象创建后自动调用，主要用于设置对象的初始状态（设置对象属性）
-```
+```python
 # 定义类 
 class Car:
   def __init__(self, c_brand, c_name, c_price):
@@ -797,10 +797,27 @@ print(c1.__dict__)
 
 ```python
 
-# 定义类 class 类名: def __init__(self, 形参列表): self.属性名 = 参数值 self.属性名 = 参数值 def 方法名(self, 形参列表): ... def 方法名(self, 形参列表): ... # 创建对象 对象名 = 类名(参数列表) 对象名.方法名(实参)
+# 定义类 
+class 类名:
+ def __init__(self, 形参列表):
+   self.属性名 = 参数值
+   self.属性名 = 参数值
+ def 方法名(self, 形参列表):
+     ... 
+ def 方法名(self, 形参列表): 
+     ...
+
+# 创建对象 
+对象名 = 类名(参数列表) 
+对象名.方法名(实参)
+
 
 ```
 
+```python
+class Car: def __init__(self, brand, name, price): self.brand = brand self.name = name self.price = price def running(self): print(f"{self.brand} {self.name} 正在高速行驶...") def total_cost(self, discount, rate): return self.price * discount + self.price * rate c1 = Car("BMW", "X5", 500000) total_price = c1.total_cost(0.9, 0.1) print(f"提车总价为: {total_price:.0f}") c1.running()
+
+```
 #### 魔法方法
 #### 实例属性与类属性
 
