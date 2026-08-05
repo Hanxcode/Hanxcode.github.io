@@ -814,7 +814,7 @@ class 类名:
 
 ```
 
-```python
+```markdown
 class Car: def __init__(self, brand, name, price): self.brand = brand self.name = name self.price = price def running(self): print(f"{self.brand} {self.name} 正在高速行驶...") def total_cost(self, discount, rate): return self.price * discount + self.price * rate c1 = Car("BMW", "X5", 500000) total_price = c1.total_cost(0.9, 0.1) print(f"提车总价为: {total_price:.0f}") c1.running()
 
 ```
