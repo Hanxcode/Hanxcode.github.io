@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/Python/Python核心语法.md",
+                "file": "backend/Python/AI应用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python核心语法"
+              "title": "AI应用"
             }
           }
         ]
@@ -188,8 +188,9 @@
   },
   "active": "277fe951e0d35572",
   "lastOpenFiles": [
-    "backend/首页.md",
     "backend/Python/Python核心语法.md",
+    "backend/Python/AI应用.md",
+    "backend/首页.md",
     "agent/SpringAI/SpringAI-智能客服.md",
     "backend/Python",
     "agent/SpringAI/SpringAI-哄哄模拟器.md",
