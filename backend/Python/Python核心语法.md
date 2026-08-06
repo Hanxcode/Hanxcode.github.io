@@ -879,3 +879,14 @@ except [异常类型 as 变量名]:
 [finally:
     不管是否出现异常，都会执行的代码 ]
 ```
+
+```python
+try:
+    print("================")
+    print(my_name)
+    print("================")
+except NameError as e:
+    print("程序运行报错，错误信息：", e)
+finally:
+    print("释放资源 ~")
+```
