@@ -102,6 +102,7 @@ JSON（JavaScript Object Notation）是前端的一种对象表示方法。表�
 
 提示词（Prompt）：是引导大模型（LLM）进行内容生成的命令（一句话，一个问题等）
 
+提示词工程（Prompt Engineering）：通过有技巧的拜尼希萼提示词，使大模型生成出尽可能符合预期的聂荣，这一持续
 
 # AI应用 - 实战
 # AI应用 - 知识扩展
