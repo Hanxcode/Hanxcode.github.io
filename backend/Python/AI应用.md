@@ -62,9 +62,14 @@ TCP / IP网络模型：可以认为是OSI的简化版（应用层、传输层、
 
 ##### HTTP协议 - 请求数据格式
 
+请求行（请求方式、资源路径、协议）
+请求头（格式 key ：value）
+
+请求体（请求参数部分
+
 请求方式：
-* GET：请求参数在请求行中，没有请求体，如：/ api / courses ？name=Python&status=1.GET请求参数大小在浏览器中是有限制的
-* 
+* GET：请求参数在请求行中，没有请求体，如：/ api/courses？name=Python&status=1。GET请求参数大小在浏览器中是有限制的
+* POST：请求参数在请求体中，POST请求大小是没有限制的
 
 ### Apifox 测试
 ### 代码调用测试
