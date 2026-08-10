@@ -112,6 +112,16 @@ JSON（JavaScript Object Notation）是前端的一种对象表示方法。表�
 
 # AI应用 - 实战
 
+## Streamlit
+
+Streamlit 是一个开源的Python库，专为数据工程师及机器学习工程师设计，用来快速基于Python代码构建交互式的Web网站（无需掌握前端技术）
+
+
+
+
+## AI智能伴侣 - 基本交互
+## AI智能伴侣 - 会话记忆
+## AI智能伴侣 - 侧边栏功能
 
 
 # AI应用 - 知识扩展
