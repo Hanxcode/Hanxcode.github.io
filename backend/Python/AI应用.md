@@ -262,6 +262,7 @@ if prompt: # 字符串会自动转换为布尔值, 如果字符串非空, 则为
 
 
 流式输出
+
 ```python
 import streamlit as st
 import os
@@ -337,7 +338,9 @@ if prompt: # 字符串会自动转换为布尔值, 如果字符串非空, 则为
     st.session_state.messages.append({"role": "assistant", "content": full_response})
 
 ```
+
 ## AI智能伴侣 - 侧边栏功能
+
 
 
 # AI应用 - 知识扩展
