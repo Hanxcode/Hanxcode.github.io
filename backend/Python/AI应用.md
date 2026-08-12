@@ -518,5 +518,16 @@ finally:
 
 ```
 
+
+```python
+with open("resources/静夜思.txt", "w", encoding="utf-8") as f:
+    f.write("静夜思(李白)\n")
+    f.write("窗前明月光，\n")
+    f.write("疑是地上霜。\n")
+    f.write("举头望明月，\n")
+    f.write("低头思故乡。\n")
+
+```
+with 语句（上下文管理器）的核心作用就是确保资源总是被正确的获取和释放（即使发生异常，也会被正确释放），也是项目开发中的推荐方式
 # AI应用 - 知识扩展
 
