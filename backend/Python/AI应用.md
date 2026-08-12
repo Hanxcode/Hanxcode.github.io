@@ -463,8 +463,38 @@ if prompt: # 字符串会自动转换为布尔值, 如果字符串非空, 则为
 
 ## 文件操作入门
 
+日常我们操作文件时，基本分为三步操作：打开、读 / 写、关闭
 
+读文件
+```python
+# 1．打开文件
+f = open("resources/望庐山瀑布.txt", "r", encoding="utf-8")
 
+# 2．读取文件
+content = f.read()
+print(content)
+
+# 3．关闭文件
+f.close()
+
+```
+
+写文件
+```python
+# 1．打开文件
+f = open("resources/静夜思.txt", "w", encoding="utf-8")
+
+# 2．写入文件
+f.write("窗前明月光，\n")
+f.write("疑是地上霜。\n")
+f.write("举头望明月，\n")
+f.write("低头思故乡。\n")
+
+# 3．关闭文件
+f.close()
+
+```
+编码：是将字符（文字、数字、）
 
 # AI应用 - 知识扩展
 
