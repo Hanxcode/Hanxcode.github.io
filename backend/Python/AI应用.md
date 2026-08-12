@@ -532,8 +532,33 @@ with 语句（上下文管理器）的核心作用就是确保资源总是被正
 
 ## 读取json格式文件
 
-JSON 是软件开发中最常用的数据交换格式，而为了jian'h
+JSON 是软件开发中最常用的数据交换格式，而为了简化JSON数据的处理，在Python标准库中就提供了处理JSON数据的核心模块 json
 
+序列化（写入json格式数据）：
+```python
+# 写入json数据
+import json
+
+obj = {
+    "name": "张三",
+    "age": 18,
+    "gender": "男",
+    "hobbies": ["reading", "swimming"]
+}
+with open("resources/session.json", "w", encoding="utf-8") as f:
+    json.dump(obj, f, ensure_ascii=False, indent=2)
+
+```
+
+反序列化（读取json格式数据）：
+```python
+# 读取json数据
+import json
+
+with open("resources/session.json", "r", encoding="utf-8") as f:
+    obj = json.load(f)
+    print(obj)
+```
 
 
 # AI应用 - 知识扩展
