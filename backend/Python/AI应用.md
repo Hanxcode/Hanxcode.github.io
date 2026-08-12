@@ -545,6 +545,9 @@ obj = {
     "gender": "男",
     "hobbies": ["reading", "swimming"]
 }
+
+# ensure_ascii 默认为true，确保所有的输出数据都是ascii编码（非ASCII码会进行转义）
+# indent 会在会话输出的json数据中添加缩进（格式化）
 with open("resources/session.json", "w", encoding="utf-8") as f:
     json.dump(obj, f, ensure_ascii=False, indent=2)
 
