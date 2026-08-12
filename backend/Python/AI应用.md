@@ -501,7 +501,7 @@ f.close()
 如果在操作文件过程中出现了异常，文件无法正常关闭，怎么解决？
 
 
-资源释放方案：
+资源释放方案一：
 ```python
 # 1．打开文件
 f = open("resources/静夜思.txt", "w", encoding="utf-8")
@@ -518,7 +518,7 @@ finally:
 
 ```
 
-
+资源释放方案二（推荐）：
 ```python
 with open("resources/静夜思.txt", "w", encoding="utf-8") as f:
     f.write("静夜思(李白)\n")
@@ -529,5 +529,12 @@ with open("resources/静夜思.txt", "w", encoding="utf-8") as f:
 
 ```
 with 语句（上下文管理器）的核心作用就是确保资源总是被正确的获取和释放（即使发生异常，也会被正确释放），也是项目开发中的推荐方式
+
+## 读取json格式文件
+
+JSON 是软件开发中最常用的数据交换格式，而为了jian'h
+
+
+
 # AI应用 - 知识扩展
 
