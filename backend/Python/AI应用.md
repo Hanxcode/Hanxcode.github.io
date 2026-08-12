@@ -552,6 +552,7 @@ with open("resources/session.json", "w", encoding="utf-8") as f:
     json.dump(obj, f, ensure_ascii=False, indent=2)
 
 ```
+dump（）：将python对象序列化为json格式字符串并写入文件
 
 反序列化（读取json格式数据）：
 ```python
@@ -562,6 +563,8 @@ with open("resources/session.json", "r", encoding="utf-8") as f:
     obj = json.load(f)
     print(obj)
 ```
+load（）：从文件中读取 json 格式数据，并将其反序列化为python对象
+
 
 
 # AI应用 - 知识扩展
