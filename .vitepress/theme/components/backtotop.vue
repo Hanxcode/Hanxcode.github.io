@@ -1,4 +1,9 @@
 <template>
+  <!--
+    返回顶部按钮：
+    - 使用 Vue <Transition> 包裹，实现显示/隐藏时的淡入淡出动画
+    - 滚动超过 100px 时显示，点击后平滑滚动到页面顶部
+  -->
   <Transition name="fade">
     <div v-show="showBackTop" class="vitepress-backTop-main" title="返回顶部" @click="scrollToTop()">
       <svg t="1720595052079" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4279" width="200" height="200">
@@ -11,9 +16,13 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from "vue";
 
-// 是否显示返回顶部
+// 控制返回顶部按钮的显示/隐藏状态
 const showBackTop = ref(true);
 
+/**
+ * 平滑滚动到页面顶部
+ * behavior: 'smooth' 让滚动过程带有动画，提升用户体验
+ */
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -21,7 +30,13 @@ function scrollToTop() {
   });
 }
 
-// 节流
+/**
+ * 节流函数：
+ * 限制滚动事件回调的执行频率，避免高频滚动时频繁触发重渲染，提高性能。
+ *
+ * @param fn 要节流的函数
+ * @param delay 两次执行之间的最小间隔（毫秒）
+ */
 function throttle(fn, delay = 100) {
   let lastTime = 0;
   return function () {
@@ -32,18 +47,21 @@ function throttle(fn, delay = 100) {
     }
   };
 }
+
+// 滚动回调：当页面滚动距离超过 100px 时显示按钮，否则隐藏
 const onScroll = throttle(
     () => (showBackTop.value = Boolean(window.scrollY > 100))
 );
 
-// 监听滚动事件
+// 组件挂载时注册滚动监听
 onMounted(() => window.addEventListener("scroll", onScroll));
 
-// 移除监听事件
+// 组件卸载前移除滚动监听，防止内存泄漏
 onBeforeUnmount(() => window.removeEventListener("scroll", onScroll));
 </script>
 
 <style lang="css" scoped>
+/* 返回顶部按钮基础样式：固定定位在右下角 */
 .vitepress-backTop-main {
   z-index: 999;
   position: fixed;
@@ -59,16 +77,18 @@ onBeforeUnmount(() => window.removeEventListener("scroll", onScroll));
   box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* 鼠标悬停时背景色变亮，提供视觉反馈 */
 .vitepress-backTop-main:hover {
   background-color: #71cda3;
 }
 
+/* SVG 图标充满按钮容器 */
 svg {
   width: 100%;
   height: 100%;
 }
 
-/* 旋转动画 */
+/* 旋转动画定义（当前未绑定到元素，保留备用） */
 @keyframes bounce {
   0% {
     transform: translateY(0) rotateY(0);
@@ -83,7 +103,7 @@ svg {
   }
 }
 
-/* 进入 退出动画 */
+/* Vue Transition 进入/退出动画：透明度渐变 */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;

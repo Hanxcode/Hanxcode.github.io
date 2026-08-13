@@ -1,3 +1,15 @@
+/*
+ * 自定义样式补充
+ *
+ * 本文件用于覆盖或扩展 VitePress 默认主题样式，
+ * 主要包含侧边栏层级美化、顶部导航悬停效果以及移动端菜单反馈。
+ */
+
+/*
+ * 侧边栏一级分组展开后的子项缩进与左侧竖线：
+ * 让分组下的链接在视觉上形成清晰的层级关系，
+ * 并添加背景色过渡动画，提升交互反馈。
+ */
 .group:has([role='button']) .VPSidebarItem.level-0 .items {
     padding-left: 16px !important;
     border-left: 1px solid var(--vp-c-divider);
@@ -5,20 +17,29 @@
     transition: background-color 0.25s;
 }
 
-/* 顶部导航链接悬停效果 */
+/* ================== 顶部导航链接悬停效果 ================== */
+
+/* 导航链接基础状态：相对定位用于承载下划线伪元素 */
 .VPNavBarMenuLink {
     position: relative;
     transition: color 0.2s ease, opacity 0.2s ease;
 }
 
+/* 鼠标悬停时切换为品牌主色 */
 .VPNavBarMenuLink:hover {
     color: var(--vp-c-brand-1);
 }
 
+/* 当前页面所属导航项也高亮 */
 .VPNavBarMenuLink.active {
     color: var(--vp-c-brand-1);
 }
 
+/*
+ * 下划线伪元素：
+ * 默认缩放为 0（隐藏），悬停或激活时从左向右展开。
+ * transform-origin: left 保证动画从左侧开始展开。
+ */
 .VPNavBarMenuLink::after {
     content: '';
     position: absolute;
@@ -37,7 +58,9 @@
     transform: scaleX(1);
 }
 
-/* 移动端菜单导航项视觉反馈 */
+/* ================== 移动端菜单导航项视觉反馈 ================== */
+
+/* 移动端展开菜单中的链接：悬停时文字变色并轻微右移 */
 .VPNavScreenMenuLink {
     transition: color 0.2s ease, padding-left 0.2s ease;
 }

@@ -1,10 +1,33 @@
+/*
+ * 样式入口文件
+ *
+ * 集中导入所有主题相关的 CSS 文件，便于统一管理和维护。
+ * 导入顺序会影响最终样式的优先级，通用变量应放在前面，
+ * 具体组件/覆盖样式放在后面。
+ */
+
+/* CSS 变量与基础覆盖 */
 @import './var.css';
+
+/* 彩虹锚点、标题等装饰性动画样式 */
 @import './rainbow.css';
+
+/* 引用块样式 */
 @import "./blockquote.css";
+
+/* 自定义块（tip/warning/details 等）样式 */
 @import "./custom-block.css";
+
+/* 毛玻璃/透明效果 */
 @import "./blur.css";
+
+/* 隐藏默认元素的分隔线/边框 */
 @import "./hidden.css";
+
+/* 代码块相关样式 */
 @import './vp-code.css';
 @import './vp-code-group.css';
 @import './vp-code-title.css';
+
+/* MathJax 公式渲染样式 */
 @import "mathjax3.css";

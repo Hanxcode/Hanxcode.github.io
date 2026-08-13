@@ -1,10 +1,16 @@
 :root {
+    /*
+     * 品牌色变量：
+     * 用于链接、按钮、高亮等强调色。
+     * -brand-1 为默认主色，-brand-2/-brand-3 为不同深浅的辅助色。
+     */
     --vp-c-brand-1: rgb(95, 159,  183);
     --vp-c-brand-2: rgb(84, 148, 197);
     --vp-c-brand-3: rgb(103, 193, 243);
 
 }
 
+/* 深色模式下的品牌色：整体提亮，保证在暗色背景上有足够对比度 */
 .dark {
     --vp-c-brand-1: rgb(166, 222, 253);
     --vp-c-brand-2: rgb(80, 160, 206);
@@ -13,21 +19,27 @@
 }
 
 :root {
-    /* hero标题渐变色 */
+    /* Hero 标题渐变色：文字填充为透明，背景裁剪为渐变色 */
     --vp-home-hero-name-color: transparent;
     --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e8d7f6, #2babd3);
 
-    /*hero logo背景渐变色 */
+    /* Hero 图片区域背景渐变与模糊效果 */
     --vp-home-hero-image-background-image: linear-gradient(0deg, white , black);
     --vp-home-hero-image-filter: blur(40px);
 }
 
+/* 文档正文中的所有链接去掉默认下划线，保持简洁 */
 .vp-doc a{
     text-decoration: none;
 }
 
 
 
+/*
+ * medium-zoom 图片放大层的层级调整：
+ * 默认 z-index 为 21，但在本主题中会被其他元素遮挡，
+ * 因此将放大图片层级提升到 9999，确保点击放大后始终置顶。
+ */
 .medium-zoom-overlay {
     z-index: 30;
 }

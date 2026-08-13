@@ -1,3 +1,10 @@
+/*
+ * 彩虹动画样式
+ *
+ * 定义 rainbow 关键帧，让 --rainbow-prev 和 --rainbow-next 两个 CSS 变量
+ * 在 8 秒内循环变化，实现 Hero 标题与 Logo 背景的流动渐变效果。
+ */
+
 /* 彩虹动画 */
 @keyframes rainbow {
     0% {

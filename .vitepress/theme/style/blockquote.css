@@ -1,3 +1,9 @@
+/*
+ * 引用块样式
+ *
+ * 为 Markdown 引用块添加圆角、背景色和左侧彩色竖条，
+ * 使其在文档中更醒目。
+ */
 .vp-doc blockquote {
     border-radius: 10px;
     padding: 18px 20px 20px 15px;

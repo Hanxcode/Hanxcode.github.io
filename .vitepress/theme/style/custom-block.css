@@ -1,5 +1,13 @@
-/* .vitepress/theme/style/custom-block.css */
-/* 深浅色卡 */
+/*
+ * .vitepress/theme/style/custom-block.css
+ *
+ * 自定义容器（info / tip / warning / danger / note / important / caution）样式。
+ * 为每种容器定义了浅色/深色模式下的边框色与背景色，
+ * 并添加 SVG 图标、圆角和流动的跑马灯边框动画。
+ */
+
+/* ================== 深浅色卡 ================== */
+/* 浅色模式变量 */
 :root {
     --custom-block-info-left: #cccccc;
     --custom-block-info-bg: #fafafa;
