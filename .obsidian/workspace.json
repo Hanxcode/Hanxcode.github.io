@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/Python/AI应用.md",
+                "file": "backend/Python/爬虫.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI应用"
+              "title": "爬虫"
             }
           }
         ]
@@ -190,6 +190,7 @@
   "lastOpenFiles": [
     "backend/Python/Python核心语法.md",
     "backend/Python/AI应用.md",
+    "backend/Python/爬虫.md",
     "backend/首页.md",
     "agent/SpringAI/SpringAI-智能客服.md",
     "backend/Python",
