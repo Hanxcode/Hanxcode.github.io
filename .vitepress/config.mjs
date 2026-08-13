@@ -49,8 +49,8 @@ const baseVitePressConfig = {
       }
     },
     nav: [
-
-      { text: '<strong>后端</strong>', link: '/backend/首页.md' },
+      { text: '<strong>后端</strong>', link: '/backend/首页.md', activeMatch: '/backend/' },
+      { text: '<strong>agent</strong>', link: '/agent/', activeMatch: '/agent/' },
       { text: '<strong>主页</strong>', link: '/' },
     ],
     socialLinks: [
@@ -101,6 +101,15 @@ const sidebarConfigs = [
     basePath: '/backend/',
     resolvePath: '/backend/',
     rootGroupText: '后端学习笔记',
+    removePrefixAfterOrdering: true,
+    prefixSeparator: '.',
+  },
+  {
+    documentRootPath: '',
+    scanStartPath: 'agent',
+    basePath: '/agent/',
+    resolvePath: '/agent/',
+    rootGroupText: 'Agent 笔记',
     removePrefixAfterOrdering: true,
     prefixSeparator: '.',
   },

@@ -4,3 +4,49 @@
     border-radius: 2px;
     transition: background-color 0.25s;
 }
+
+/* 顶部导航链接悬停效果 */
+.VPNavBarMenuLink {
+    position: relative;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.VPNavBarMenuLink:hover {
+    color: var(--vp-c-brand-1);
+}
+
+.VPNavBarMenuLink.active {
+    color: var(--vp-c-brand-1);
+}
+
+.VPNavBarMenuLink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background: var(--vp-c-brand-1);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+.VPNavBarMenuLink:hover::after,
+.VPNavBarMenuLink.active::after {
+    transform: scaleX(1);
+}
+
+/* 移动端菜单导航项视觉反馈 */
+.VPNavScreenMenuLink {
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.VPNavScreenMenuLink:hover {
+    color: var(--vp-c-brand-1);
+    padding-left: 6px;
+}
+
+.VPNavScreenMenuLink.active {
+    color: var(--vp-c-brand-1);
+}

@@ -7,7 +7,10 @@ hero:
   actions:
     - theme: brand
       text: 后端学习
-      link: /back-end/0.前言.md
+      link: /backend/首页.md
+    - theme: alt
+      text: agent
+      link: /agent/
 
 features:
   - title: 日常学习
