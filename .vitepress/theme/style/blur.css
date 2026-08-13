@@ -1,4 +1,9 @@
-/* .vitepress\theme\style\blur.css */
+/*
+ * .vitepress\theme\style\blur.css
+ *
+ * 为导航栏、搜索框、Feature 卡片、侧边栏等元素添加毛玻璃（backdrop-filter）效果，
+ * 让页面在滚动时呈现半透明模糊的视觉层次。
+ */
 :root {
 
     /* 首页下滑后导航透明 */

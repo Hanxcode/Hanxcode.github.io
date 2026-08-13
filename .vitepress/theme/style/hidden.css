@@ -1,4 +1,9 @@
-/* .vitepress\theme\style\hidden.css */
+/*
+ * .vitepress\theme\style\hidden.css
+ *
+ * 隐藏 VitePress 默认主题中一些不必要的边框和分隔线，
+ * 使页面整体风格更简洁、更符合本站设计。
+ */
 :root {
 
     /* 文档页Logo出文字下横条 */
