@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTimeReverse",
+                "sortOrder": "byCreatedTimeReverse",
                 "autoReveal": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -186,7 +186,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3306634ae0ddb09d",
+  "active": "62ffafe2d5e511b0",
   "lastOpenFiles": [
     "backend/Python/爬虫.md",
     "agent/index.md",
