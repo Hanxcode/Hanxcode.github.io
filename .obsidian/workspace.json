@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/Python/爬虫.md",
+                "file": "backend/Python/数据分析.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "爬虫"
+              "title": "数据分析"
             }
           }
         ]
@@ -186,9 +186,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "62ffafe2d5e511b0",
+  "active": "3306634ae0ddb09d",
   "lastOpenFiles": [
     "backend/Python/爬虫.md",
+    "backend/Python/数据分析.md",
     "agent/index.md",
     "backend/Python/Python核心语法.md",
     "backend/Python/AI应用.md",
