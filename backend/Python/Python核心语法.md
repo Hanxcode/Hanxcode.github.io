@@ -860,6 +860,32 @@ c1.running()
 
 封装就是把数据（属性）和操作数据的函数（方法）捆绑在一起，形成一个独立的单元（类），并隐藏内部的实现细节，只对外暴露必要的功能（方法）
 
+```python
+class Car:
+    # 类属性（所有实例对象共享的）
+    wheel = 4  # 轮胎数量
+    tax_rate = 0.1  # 购置税税率
+
+    def __init__(self, c_color, c_brand, c_name, c_owner):
+        # 实例属性
+        self.color = c_color
+        self.brand = c_brand
+        self.name = c_name
+        self.__owner = c_owner  # 私有属性
+
+    def start(self):  # 启动
+        print(f'{self.brand} {self.name} 正在启动...')
+
+    def stop(self):  # 停止
+        print(f'{self.brand} {self.name} 停止行驶...')
+
+    def __control_fuel(self):  # 私有方法
+        print(f'{self.brand} {self.name} 控制燃油分配...')
+        
+        
+```
+私有：私有的属性和方法只能在类的内部使用；Python中并没有
+
 #### 继承
 #### 多态
 
