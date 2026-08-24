@@ -890,6 +890,31 @@ class Car:
 #### 继承
 
 继承描述的是两个类之间的关系，子类继承父类，就可以获取到父类的属性和方法。（非私有）
+
+**重写**：指子类继承父类后，如果父类中的方法不满足需求，可以在子类中重新定义父类中已有的方法（方法名相同），从而用子类的实现替换父类的实现
+
+```python
+class Car:
+    def __init__(self, c_color, c_brand, c_name):
+    self.color = c_color
+    self.brand = c_brand
+    self.name = c_name
+
+    def start(self):  # 启动
+    print(f'{self.brand} {self.name} 正在启动...')
+
+    def stop(self):  # 停止
+    print(f'{self.brand} {self.name} 停止行驶...')
+
+    def charge(self):
+    print(f'{self.brand} {self.model} 正在补充燃料...')
+
+class FuelCar(Car):  # 油车类
+    def charge(self):  # 补充燃料
+    print(f'{self.brand} {self.model} 正在加油...')
+
+```
+注意：如果子类在重写父类的方法时，需要diao'yo
 #### 多态
 
 
