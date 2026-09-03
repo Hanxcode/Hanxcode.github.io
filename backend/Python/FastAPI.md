@@ -28,3 +28,14 @@ FastAPI的路由定义基于Python的装饰器模式
 1. 请求行：包含方法、URL、协议版本
 2. 请求头：元数据信息（Content-Type、Authorization等）
 3. 请求体：实际要发送的数据内容
+
+## 相应类型
+
+| 响应类型 | 用途 | 示例 |
+|---|---|---|
+| JSONResponse | 默认响应，返回JSON数据 | `return {"key": "value"}` |
+| HTMLResponse | 返回HTML内容 | `return HTMLResponse(html_content)` |
+| PlainTextResponse | 返回纯文本 | `return PlainTextResponse("text")` |
+| FileResponse | 返回文件下载 | `return FileResponse(path)` |
+| StreamingResponse | 流式响应 | 生成器函数返回数据 |
+| RedirectResponse | 重定向 | `return RedirectResponse(url)` |
