@@ -120,3 +120,4 @@ async def middleware(request, call_next):
 - 解耦：业务逻辑与基础设施代码分离
 - 易于测试：轻松的用模拟依赖替换真实依赖进行测试
 
+创建依赖项  -> 
