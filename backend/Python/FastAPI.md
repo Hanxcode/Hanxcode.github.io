@@ -39,3 +39,7 @@ FastAPI的路由定义基于Python的装饰器模式
 | FileResponse      | 返回文件下载        | `return FileResponse(path)`         |
 | StreamingResponse | 流式响应          | 生成器函数返回数据                           |
 | RedirectResponse  | 重定向           | `return RedirectResponse(url)`      |
+
+### 自定义响应数据格式
+
+response_model是路径操作装饰器（如 @app.get 或 @app.post）的关键参数，它通过一个Pydantic模型来yan'ge'din'f'yi
