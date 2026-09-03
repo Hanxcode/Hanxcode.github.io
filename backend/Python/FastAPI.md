@@ -84,9 +84,13 @@ async def get_news(id: int):
 
 中间件（Middleware）是一个在每次请求进入FastAPI 应用时都会被执行的函数
 
+作用是为每个请求添加统一的处理逻辑（记录日志、身份认证、跨域、设置响应头、性能监控等）
+
 它在请求到达实际的路径操作（路由处理函数）之前运行，并且在响应返回给客户端之前再运行一次
 
 中间件：函数的顶部使用装饰器 `@app.middleware("http")`
+
+执行顺序：自下而上
 
 ```python
 from fastapi import FastAPI
@@ -102,3 +106,5 @@ async def middleware(request, call_next):
     return response
 
 ```
+
+## 依赖注入
