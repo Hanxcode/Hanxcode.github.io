@@ -24,4 +24,7 @@ FastAPI的路由定义基于Python的装饰器模式
 
 ## 请求体参数
 
-在HTTP协议中，一个完整的qing
+在HTTP协议中，一个完整的请求由三部分组成：
+1. 请求行：包含方法、URL、协议版本
+2. 请求头：元数据信息（Content-Type、Authorization等）
+3. 请求体：实际要发送的数据内容
