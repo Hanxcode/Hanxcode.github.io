@@ -83,4 +83,22 @@ async def get_news(id: int):
 ## 中间件
 
 中间件（Middleware）是一个在每次请求进入FastAPI 应用时都会被执行的函数
-它在请求到达实际的路径操作（路由处理函数）之前yun
+
+它在请求到达实际的路径操作（路由处理函数）之前运行，并且在响应返回给客户端之前再运行一次
+
+中间件：函数的顶部使用装饰器 `@app.middleware("http")`
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.middleware("http")
+async def middleware(request, call_next):
+	# call_next:chuan'di'qing'qiu
+    print('中间件开始处理 -- start')
+    response = await call_next(request)
+    print('中间件处理完成 -- end')
+    return response
+
+```
