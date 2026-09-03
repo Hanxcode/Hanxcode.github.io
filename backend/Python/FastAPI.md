@@ -79,3 +79,8 @@ async def get_news(id: int):
     return {"id": id}
 
 ```
+
+## 中间件
+
+中间件（Middleware）是一个在每次请求进入FastAPI 应用时都会被执行的函数
+它在请求到达实际的路径操作（路由处理函数）之前yun
