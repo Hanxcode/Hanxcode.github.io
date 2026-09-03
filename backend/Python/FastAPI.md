@@ -42,4 +42,22 @@ FastAPI的路由定义基于Python的装饰器模式
 
 ### 自定义响应数据格式
 
-response_model是路径操作装饰器（如 @app.get 或 @app.post）的关键参数，它通过一个Pydantic模型来yan'ge'din'f'yi
+response_model是路径操作装饰器（如 @app.get 或 @app.post）的关键参数，它通过一个Pydantic模型来严格定义和约束API端点的输出格式
+
+```python
+from pydantic import BaseModel
+
+class News(BaseModel):
+    id: int
+    title: str
+    content: str
+
+@app.get("/news/{id}", response_model=News)
+async def get_news(id: int):
+    return {
+    "id": id,
+    "title": f"这是第{id}本书",
+    "content": "这是一本好书"
+    }
+
+```
