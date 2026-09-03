@@ -64,4 +64,18 @@ async def get_news(id: int):
 
 ### 异常处理
 
-对于客户端引发的错误（4xx，如资源未找到，认证失败），应使用fastapi.HTTPException来中断正常处理流程，并返回
+对于客户端引发的错误（4xx，如资源未找到，认证失败），应使用fastapi.HTTPException来中断正常处理流程，并返回标准错误响应
+
+```python
+from fastapi import FastAPI, HTTPException
+
+app = FastAPI()
+
+@app.get('/news/{id}')
+async def get_news(id: int):
+    id_list = [1, 2, 3, 4, 5, 6]
+    if id not in id_list:
+        raise HTTPException(status_code=404, detail="当前id不存在")
+    return {"id": id}
+
+```
