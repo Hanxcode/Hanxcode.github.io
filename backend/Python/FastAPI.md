@@ -61,3 +61,7 @@ async def get_news(id: int):
     }
 
 ```
+
+### 异常处理
+
+对于客户端引发的错误（4xx，如资源未找到，认证失败），应使用fastapi.HTTPException来中断正常处理流程，并返回
