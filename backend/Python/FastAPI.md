@@ -95,7 +95,7 @@ app = FastAPI()
 
 @app.middleware("http")
 async def middleware(request, call_next):
-	# call_next:chuan'di'qing'qiu
+	# call_next:传递请求给路径处理函数
     print('中间件开始处理 -- start')
     response = await call_next(request)
     print('中间件处理完成 -- end')
