@@ -120,4 +120,31 @@ async def middleware(request, call_next):
 - 解耦：业务逻辑与基础设施代码分离
 - 易于测试：轻松的用模拟依赖替换真实依赖进行测试
 
-创建依赖项  -> 
+创建依赖项  -> 导入Depends -> 注入依赖
+
+```python
+from fastapi import FastAPI,Query,Depends   
+  
+# 创建 FastAPI 实例  
+app = FastAPI()  
+  
+  
+@app.get("/")  
+async def root():  
+    return {"message": "Hello World666"}  
+  
+  
+# 1. 依赖项  
+async def common_parameters(  
+    skip: int = Query(0,ge=0),  
+    limit: int = Query(10,le=60),  
+):  
+    return {"skip":skip,"limit":limit}  
+  
+  
+  
+@app.get("/news/news_list")  
+async def get_news_list(commons = Depends(common_parameters)):  
+    return commons
+
+```
