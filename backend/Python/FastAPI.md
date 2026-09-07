@@ -163,3 +163,17 @@ ORM（Object-RelationalMapping，对象关系映射）是一种编程技术，�
 ## ORM - 建表
 
 使用 create_async_engine 创建异步引擎
+
+```python
+from sqlalchemy.ext.asyncio import create_async_engine
+
+ASYNC_DATABASE_URL = "mysql+aiomysql://root:123456@localhost:3306/fastapi_test?charset=utf8"
+
+# 创建异步引擎
+async_engine = create_async_engine(
+    ASYNC_DATABASE_URL,
+    echo=True,    # 可选：输出SQL日志
+    pool_size=10,    # 设置连接池中保持的持久连接数
+    max_overflow=20   # 设置连接池允许创建的额外连接数
+)
+```
