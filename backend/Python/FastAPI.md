@@ -159,3 +159,7 @@ ORM（Object-RelationalMapping，对象关系映射）是一种编程技术，�
 - 代码更加简洁易读
 - 自动处理数据库连接事务
 - 自动防止SQL注入攻击
+
+## ORM - 建表
+
+使用 create_async_engine 创建异步引擎
