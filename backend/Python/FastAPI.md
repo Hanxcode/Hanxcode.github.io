@@ -182,3 +182,19 @@ ORM - 定义模型类
 
 1. 基类，继承`DeclarativeBase`（包含通用属性和字段的映射）
 2. 定义数据库表对应的模型类
+
+```python
+class Base(DeclarativeBase):
+    create_time: Mapped[datetime] = mapped_column(
+    DateTime, insert_default=func.now(), default=datetime.now, comment="创建时间")
+    update_time: Mapped[datetime] = mapped_column(
+    DateTime, insert_default=func.now(), onupdate=func.now(), default=datetime.now, comment="修改时间")
+
+class Book(Base):
+    __tablename__="book"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    bookname: Mapped[str] = mapped_column(String(255))
+    author: Mapped[str] = mapped_column(String(255))
+
+```
