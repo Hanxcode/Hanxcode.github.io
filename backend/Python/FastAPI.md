@@ -177,3 +177,8 @@ async_engine = create_async_engine(
     max_overflow=20   # 设置连接池允许创建的额外连接数
 )
 ```
+
+ORM - 定义模型类
+
+1. 基类，继承`DeclarativeBase`（包含通用属性和字段的映射）
+2. 定义数据库表对应的模型类
