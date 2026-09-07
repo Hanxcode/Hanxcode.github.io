@@ -151,3 +151,11 @@ async def get_news_list(commons = Depends(common_parameters)):
 
 
 # ORM
+
+ORM（Object-RelationalMapping，对象关系映射）是一种编程技术，用于在面向对象编程语言和关系型数据库之间建立映射。它允许开发者通过操作对象的方式与数据库进行交互，而无需直接编写复杂的SQL语句
+
+优势：
+- 减少重复的SQL代码
+- 代码更加简洁易读
+- 自动处理数据库连接事务
+- 自动防止SQL注入攻击
