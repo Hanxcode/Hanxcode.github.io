@@ -148,3 +148,6 @@ async def get_news_list(commons = Depends(common_parameters)):
     return commons
 
 ```
+
+
+# ORM
