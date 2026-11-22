@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d74e7218f8e0f712",
+        "id": "fc9820cef1e8ed30",
         "type": "tabs",
         "children": [
           {
-            "id": "c1e238701694c21f",
+            "id": "435f8e47f9527efd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-11-22.md",
+                "file": "agent/SpringAI/大模型应用开发.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-11-22"
+              "title": "大模型应用开发"
             }
           }
         ]
@@ -60,8 +60,24 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "f3e9ea3602f1926e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -171,8 +187,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c1e238701694c21f",
+  "active": "435f8e47f9527efd",
   "lastOpenFiles": [
+    "agent/SpringAI/SpringAI-哄哄模拟器.md",
+    "agent/SpringAI/SpringAI-智能客服.md",
+    "agent/index.md",
+    "agent/SpringAI/大模型应用开发.md",
+    "agent/SpringAI/SpringAI-对话机器人.md",
     "2026-11-22.md",
     "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/fwcrEIgBxWLVGXs.png",
     "未命名.md",
@@ -180,8 +201,6 @@
     "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/E1Pf2pGv4b9Lj7t.png",
     "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/btfjlJhDuWrSXYi.png",
     "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/aoBjrR5bPqWzCel.png",
-    "agent/SpringAI/大模型应用开发.md",
-    "agent/index.md",
     "about/index.md",
     "about",
     "backend/java/redis/Redis数据库.assets/VK3k7EAZDT1fjIo.jpg",
@@ -216,9 +235,6 @@
     "backend/java/JavaWeb/Web前端开发/Web前端开发（Vue工程化）.md",
     "backend/java/JavaWeb/Web前端开发/Web前端开发（ElementPlus）.md",
     "backend/java/JavaWeb/Java网络编程基础/Java网络编程.md",
-    "backend/Python/数据分析.md",
-    "backend/Python/爬虫.md",
-    "backend/Python/AI应用.md",
     "未命名.canvas"
   ]
 }
