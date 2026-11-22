@@ -81,11 +81,12 @@ const baseVitePressConfig = {
       }
     },
 
-    // 顶部导航栏：依次显示“后端”、“agent”、“主页”
+    // 顶部导航栏：依次显示“后端”、“agent”、“关于我”、“主页”
     // activeMatch 用于在访问子页面时保持对应导航项的高亮状态
     nav: [
       { text: '<strong>后端</strong>', link: '/backend/首页.md', activeMatch: '/backend/' },
       { text: '<strong>agent</strong>', link: '/agent/', activeMatch: '/agent/' },
+      { text: '<strong>关于我</strong>', link: '/about/', activeMatch: '/about/' },
       { text: '<strong>主页</strong>', link: '/' },
     ],
 
