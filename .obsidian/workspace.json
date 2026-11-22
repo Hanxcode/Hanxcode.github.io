@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fc9820cef1e8ed30",
+        "id": "7001136dd0e878a4",
         "type": "tabs",
         "children": [
           {
-            "id": "435f8e47f9527efd",
+            "id": "cf8d2ee8bfa97fc1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "agent/SpringAI/大模型应用开发.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "大模型应用开发"
+              "title": "新标签页"
             }
           }
         ]
@@ -187,13 +183,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "435f8e47f9527efd",
+  "active": "cf8d2ee8bfa97fc1",
   "lastOpenFiles": [
+    "agent/index.md",
+    "agent/SpringAI/SpringAI-对话机器人.md",
+    "agent/SpringAI/大模型应用开发.md",
     "agent/SpringAI/SpringAI-哄哄模拟器.md",
     "agent/SpringAI/SpringAI-智能客服.md",
-    "agent/index.md",
-    "agent/SpringAI/大模型应用开发.md",
-    "agent/SpringAI/SpringAI-对话机器人.md",
     "2026-11-22.md",
     "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/fwcrEIgBxWLVGXs.png",
     "未命名.md",
