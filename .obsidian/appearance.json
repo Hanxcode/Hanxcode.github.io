@@ -1,4 +1,5 @@
 {
   "theme": "obsidian",
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [],
+  "showRibbon": true
 }
