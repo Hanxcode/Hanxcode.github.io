@@ -8,7 +8,9 @@
 2. 把 `.md` 和它引用的附件一起复制到相应目录。例如：文章放在 `backend/java/JavaSE/输入输出/笔记.md`，配图放在同级的 `images/io.png`，正文写 `![输入输出示意图](./images/io.png)`。路径从文章所在位置算起，用 `/`，大小写与文件名一致。电脑上的盘符路径、Obsidian 的 `![[图片.png]]` 要换成标准 Markdown 链接。
 3. 在 `backend/首页.md` 的相应专题补上文章链接。VitePress 会扫描 `backend/` 自动生成侧栏，不用为每篇文章改配置。网站从首页点「后端学习」就能看到这份目录。
 
-**什么时候用 PicGo？** 图片已随笔记保存时，保留相对路径即可，不必逐张上传。如果希望新截图放到图床，先在本机 PicGo 配好图床、启动 PicGo 及其 HTTP 服务，并在 Obsidian 启用 **Image auto upload**。在文章中粘贴图片时，插件调用 PicGo 并插入返回的外链；把已有文件夹拖进仓库不会触发批量上传。
+**什么时候用 PicGo？** 图片已随笔记保存时，保留相对路径即可，不必逐张上传。如果希望新截图放到图床，先在本机 PicGo 配好图床并试传一张不含隐私的图片，再启动 PicGo 的 HTTP 服务。Obsidian 的 **Image auto upload** 插件默认调用 `http://127.0.0.1:36677/upload`：在笔记里粘贴截图，看到返回的图床链接就表示上传成功。把已有文件夹复制进仓库不会触发批量上传。图床令牌只保存在本机，不要写进笔记或提交到仓库。
+
+**怎么补回缺图？** 在笔记里搜索「配图待补」。如果手头有原图，就把它放到该篇笔记旁边的 `.assets` 目录，用 `![图片说明](./笔记名.assets/文件名.png)` 替换提示。对于标有「公开版已省略」的截图，只补裁剪或打码后的版本。
 
 ## 本地预览
 
@@ -37,4 +39,4 @@ git push
 
 本仓库本地 `master` 已跟踪远端分支 `master/master`（远端名称也是 `master`），所以直接 `git push` 即可。推送到 `master` 后，GitHub Actions 自动安装依赖、构建并部署到 [GitHub Pages](https://hanxcode.github.io/)；不需要提交 `.vitepress/dist/`。
 
-**网站没更新？** 在 GitHub 上先看 `master` 是否已有这次提交。没有就排查 Git 同步；有就打开 **Actions → Deploy VitePress site to Pages** 对应的运行。`build` 失败时看第一个报错，并用 `npm run docs:build` 本地复现；`deploy` 失败时检查仓库 **Settings → Pages** 是否选择 **GitHub Actions**。如果页面更新但图片没显示，先核对图片是否一起提交、路径大小写是否完全一致。
+**网站没更新？** 在 GitHub 上先看 `master` 是否已有这次提交。没有就排查 Git 同步：本库的 `.git` 在根目录，若 Obsidian Git 提示 `Base path does not exist`，请把插件的「仓库子目录 / Base path」留空，不要在这里填 GitHub 网址。有提交就打开 **Actions → Deploy VitePress site to Pages** 对应的运行。`build` 失败时看第一个报错，并用 `npm run docs:build` 本地复现；`deploy` 失败时检查仓库 **Settings → Pages** 是否选择 **GitHub Actions**。如果页面更新但图片没显示，先核对图片是否一起提交、路径大小写是否完全一致。
