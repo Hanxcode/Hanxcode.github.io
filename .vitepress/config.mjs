@@ -13,6 +13,7 @@ import { generateSidebar, withSidebar } from 'vitepress-sidebar';
 import { withMermaid } from 'vitepress-plugin-mermaid';
 import mathjax3 from 'markdown-it-mathjax3';
 import { RssPlugin } from "vitepress-plugin-rss";
+import { articleHeader } from './article-header.mjs';
 
 // 站点部署的基础路径，'/' 表示部署在域名根目录
 const base = '/';
@@ -115,20 +116,7 @@ const baseVitePressConfig = {
       // 全局注册 MathJax 数学公式渲染插件
       md.use(mathjax3);
 
-      /**
-       * 自定义 heading_close 渲染规则：
-       * 在每一篇文档的 <h1> 标题后自动插入 <ArticleMetadata /> 组件，
-       * 用于展示文章的更新时间、字数、阅读时长等元信息。
-       * 注意：这里先保存原始规则，确保不会破坏 VitePress 默认的标题渲染行为。
-       */
-      const originalHeadingCloseRule = md.renderer.rules.heading_close;
-      md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
-        let htmlResult = originalHeadingCloseRule
-            ? originalHeadingCloseRule(tokens, idx, options, env, slf)
-            : slf.renderToken(tokens, idx, options);
-        if (tokens[idx].tag === 'h1') htmlResult += `<ArticleMetadata />`;
-        return htmlResult;
-      };
+      md.use(articleHeader);
     }
   },
 
