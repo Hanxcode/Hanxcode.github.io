@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "agent/index.md",
+                "file": "agent/SpringAI/大模型应用开发.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "大模型应用开发"
             }
           }
         ]
@@ -188,6 +188,7 @@
   },
   "active": "3306634ae0ddb09d",
   "lastOpenFiles": [
+    "agent/index.md",
     "about/index.md",
     "about",
     "backend/java/redis/Redis数据库.assets/VK3k7EAZDT1fjIo.jpg",
@@ -233,7 +234,6 @@
     "backend/Python/Python核心语法.md",
     "未命名.canvas",
     "backend/java/Java学习.md",
-    "backend/java/未命名.md",
-    "backend/Python/FastAPI.md"
+    "backend/java/未命名.md"
   ]
 }
