@@ -11,10 +11,14 @@
             "id": "cf8d2ee8bfa97fc1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "agent/LangGraph/未命名.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "未命名"
             }
           }
         ]
@@ -186,6 +190,9 @@
   "active": "cf8d2ee8bfa97fc1",
   "lastOpenFiles": [
     "agent/index.md",
+    "agent/LangGraph/未命名.md",
+    "agent/未命名.md",
+    "agent/LangGraph",
     "agent/SpringAI/SpringAI-对话机器人.md",
     "agent/SpringAI/大模型应用开发.md",
     "agent/SpringAI/SpringAI-哄哄模拟器.md",
@@ -222,15 +229,12 @@
     "backend/java/JavaWeb/后端/Maven.md",
     "backend/java/JavaWeb/后端/Maven.assets",
     "backend/java/JavaWeb/Web后端开发/后端Web进阶（SpringBoot原理）.md",
-    "backend/java/JavaWeb/Web后端开发/后端Web进阶（SpringBoot原理）.assets",
     "backend/java/JavaWeb/Web后端开发/后端Web进阶（AOP）.md",
     "backend/java/JavaWeb/Web后端开发/Web后端开发（登录）.md",
     "backend/java/JavaWeb/Web后端开发/Web后端开发（Maven高级）.md",
     "backend/java/JavaWeb/Web后端开发/Web后端实战.md",
     "backend/java/JavaWeb/Web前端开发/Web前端开发（实战）.md",
     "backend/java/JavaWeb/Web前端开发/Web前端开发（Vue工程化）.md",
-    "backend/java/JavaWeb/Web前端开发/Web前端开发（ElementPlus）.md",
-    "backend/java/JavaWeb/Java网络编程基础/Java网络编程.md",
     "未命名.canvas"
   ]
 }
