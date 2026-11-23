@@ -6,9 +6,16 @@ description: 从运行本站源码开始，换上自己的站名，写下第一�
 
 这个博客没有后台和数据库。你写一份 Markdown 文件，VitePress 就能把它变成网页；推送到 GitHub 后，GitHub Actions 会构建网站，GitHub Pages 负责让别人访问。下面从本站源码开始，发布一篇自己的笔记。
 
+## 一篇笔记怎样变成网页？
+
+1. **文件决定页面。** 仓库根目录就是文档根目录：`index.md` 是首页，`agent/index.md` 对应 `/agent/`。Obsidian 只是写 Markdown 的一种编辑器，PicGo 只是把图片上传到图床的工具；用普通编辑器和随文章提交的本地图片，也能得到同样的网页。
+2. **配置决定内容怎么呈现。** VitePress 把 Markdown 编译为 Vue 页面。`.vitepress/config.mjs` 用 `withSidebar` 按栏目生成侧栏，用 `withMermaid` 支持流程图；Markdown 插件分别处理时间线、MathJax 公式和文章页首。站内的 `articleHeader` 插件会为普通文章插入标题下方的元信息，不必每篇手写。
+3. **主题决定信息出现在哪里。** `.vitepress/theme/index.js` 复用 VitePress 的默认布局 `DefaultTheme.Layout`，通过插槽放入自定义组件。例如首页右栏使用 `home-features-after` 插槽。文章的最后更新时间来自该文件的 Git 提交记录；字数和预计阅读时长则由浏览器根据正文与配图统计，不是手填的发布日期。
+4. **发布只需要静态文件。** GitHub Actions 运行与本地相同的构建命令，将生成的 `.vitepress/dist/` 交给 Pages。读者访问的是其中的 HTML、样式和脚本，服务器不必为每次阅读运行 Node.js。
+
 ## 1. 在本机打开博客
 
-准备好 [Git](https://git-scm.com/downloads) 和 [Node.js 24](https://nodejs.org/en/download)（与本站部署环境一致，附带 npm）。在 GitHub 上把本站源仓库 **Fork 到自己的账号**，从自己仓库的 **Code → HTTPS** 复制克隆地址。把下例的 `YOUR-NAME/YOUR-REPO` 换成你的账号和仓库名；最后的 `my-blog` 只是本机文件夹名。
+准备好 [Git](https://git-scm.com/downloads) 和 [Node.js 24](https://nodejs.org/en/download)（与本站部署环境一致，附带 npm）。打开[本站源仓库](https://github.com/Hanxcode/Hanxcode.github.io)，点 **Fork** 创建自己的副本，然后从**自己仓库**的 **Code → HTTPS** 复制克隆地址。把下例的 `YOUR-NAME/YOUR-REPO` 换成你的账号和仓库名；最后的 `my-blog` 只是本机文件夹名。
 
 ```sh
 git clone https://github.com/YOUR-NAME/YOUR-REPO.git my-blog
@@ -17,15 +24,30 @@ npm ci
 npm run docs:dev
 ```
 
-打开终端打印的本地网址，保持终端运行。用任意文本编辑器打开根目录的 `index.md`，把 `hero.name` 改成自己的名字并保存；浏览器首页随之变化，就说明你改对了文件。这里不需要创建 `docs/` 目录，也不需要安装 Obsidian。仓库虽有 `pnpm-lock.yaml`，当前发布流程用的是 npm 和 `package-lock.json`，照着做时不用两种包管理器都装一遍。
+打开终端打印的本地网址，保持终端运行。用任意文本编辑器打开根目录的 `index.md`，把 `hero.name` 改成自己的名字并保存；浏览器首页随之变化，就说明你改对了文件。仓库虽有 `pnpm-lock.yaml`，当前发布流程用的是 npm 和 `package-lock.json`，照着做时不用两种包管理器都装一遍。
 
 ## 2. 换成自己的站点信息
 
 | 想改什么 | 改哪里 |
 | --- | --- |
-| 首页大标题、副标题、按钮、卡片 | 根目录 `index.md` 的 `hero` 和 `features` |
+| 首页大标题、副标题、按钮、卡片 | 根目录 `index.md` 的 `hero` 和 `features`；第 4 张卡片的 `link: /guide/` 指向本文 |
+| 首页右侧的自我介绍、友链及其说明 | 同一文件里的 `homeAside`；右栏组件是 `.vitepress/theme/components/HomeSidebar.vue`，只改文案或链接不必动组件 |
+| 「关于我」详情页 | `about/index.md` 使用 `.vitepress/theme/components/AboutMe.vue`；详细介绍、技术分组与近况在组件里 |
 | 浏览器标签标题、网站简介、标签图标 | `.vitepress/config.mjs` 的 `title`、`description`、`head` |
 | 顶栏站名、栏目、GitHub 链接 | 同一配置文件的 `themeConfig.siteTitle`、`nav`、`socialLinks` |
+
+**如何维护友链？** 编辑首页 `index.md` 文件顶部两条 `---` 之间已有的 `homeAside`，不要再加第二个同名区块。例如只保留一条参考链接：
+
+```yaml
+homeAside:
+  bio: 我在这里记录后端学习和做项目时遇到的问题。
+  linksNote: 这里收录写博客时常用的参考资料。
+  friendLinks:
+    - name: VitePress 官方文档
+      url: https://vitepress.dev/zh/
+```
+
+本站默认的两项都是官方文档，不代表已经与这些网站交换友链。若要收录朋友的博客，请把 `name` 和 `url` 换成对方的站名与可访问的真实主页，并同步调整 `linksNote`。暂时不放链接，把整个列表（含条目）换成一行 `friendLinks: []` 即可。
 
 改标签图标时，可以把自己的图片放在 `public/`。例如文件是 `public/favicon.png`，在配置的 `head` 中把图标的 `href` 写成 `` `${base}favicon.png` ``。不要把 `public` 写进网址；这里的 `base` 是站点部署路径，在第 4 步确定。
 

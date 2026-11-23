@@ -189,6 +189,8 @@
   },
   "active": "cf8d2ee8bfa97fc1",
   "lastOpenFiles": [
+    "about/index.md",
+    "about",
     "guide/index.md",
     "guide",
     "backend/java/redis/Redis数据库.md",
@@ -209,8 +211,6 @@
     "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/E1Pf2pGv4b9Lj7t.png",
     "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/btfjlJhDuWrSXYi.png",
     "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/aoBjrR5bPqWzCel.png",
-    "about/index.md",
-    "about",
     "backend/java/redis/Redis数据库.assets/VK3k7EAZDT1fjIo.jpg",
     "backend/java/redis/Redis数据库.assets/JYiOHBdtT7jC98R.png",
     "backend/java/redis/Redis数据库.assets/image1-20260507102519601.png",
@@ -234,7 +234,6 @@
     "backend/java/JavaWeb/Web后端开发/后端Web进阶（SpringBoot原理）.md",
     "backend/java/JavaWeb/Web后端开发/后端Web进阶（AOP）.md",
     "backend/java/JavaWeb/Web后端开发/Web后端开发（登录）.md",
-    "backend/java/JavaWeb/Web后端开发/Web后端开发（Maven高级）.md",
     "未命名.canvas"
   ]
 }

@@ -15,6 +15,7 @@ import update from "./components/update.vue"
 import ArticleMetadata from "./components/ArticleMetadata.vue"
 import backtotop from "./components/backtotop.vue"
 import header from "./components/header.vue"
+import HomeSidebar from './components/HomeSidebar.vue'
 import MyLayout from './components/MyLayout.vue'
 import "vitepress-markdown-timeline/dist/theme/index.css";
 import mediumZoom from 'medium-zoom';
@@ -98,7 +99,8 @@ export default {
         return h(DefaultTheme.Layout, null, {
             'doc-footer-before': () => h(backtotop), // 文档页脚前显示返回顶部按钮
             'layout-bottom': () => h(bsz),           // 页面底部显示访问统计
-            'home-hero-image': () => h(header)       // 首页 Hero 区域使用自定义图片组件
+            'home-hero-image': () => h(header),      // 首页 Hero 区域使用自定义图片组件
+            'home-features-after': () => h(HomeSidebar)
         })
     }
 }

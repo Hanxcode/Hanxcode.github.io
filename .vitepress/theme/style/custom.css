@@ -73,3 +73,25 @@
 .VPNavScreenMenuLink.active {
     color: var(--vp-c-brand-1);
 }
+
+@media (min-width: 960px) {
+    .blog-home .VPHome {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(240px, 28%);
+        align-items: start;
+        column-gap: 24px;
+        max-width: 1280px;
+        margin-inline: auto;
+        padding-inline: 64px;
+    }
+
+    .blog-home .VPHome > .VPHomeHero,
+    .blog-home .VPHome > .vp-doc {
+        grid-column: 1 / -1;
+    }
+
+    .blog-home .VPHome > .VPHomeHero,
+    .blog-home .VPHome > .VPHomeFeatures {
+        padding-inline: 0;
+    }
+}
