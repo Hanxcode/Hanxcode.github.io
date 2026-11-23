@@ -189,6 +189,8 @@
   },
   "active": "cf8d2ee8bfa97fc1",
   "lastOpenFiles": [
+    "guide/index.md",
+    "guide",
     "backend/java/redis/Redis数据库.md",
     "agent/LangGraph/未命名.md",
     "backend/java/JavaSE/JavaIO/IO流——黑马程序员.md",
@@ -229,12 +231,10 @@
     "backend/java/JavaWeb/后端/Web基础.md",
     "backend/java/JavaWeb/后端/Web基础.assets",
     "backend/java/JavaWeb/后端/Maven.md",
-    "backend/java/JavaWeb/后端/Maven.assets",
     "backend/java/JavaWeb/Web后端开发/后端Web进阶（SpringBoot原理）.md",
     "backend/java/JavaWeb/Web后端开发/后端Web进阶（AOP）.md",
     "backend/java/JavaWeb/Web后端开发/Web后端开发（登录）.md",
     "backend/java/JavaWeb/Web后端开发/Web后端开发（Maven高级）.md",
-    "backend/java/JavaWeb/Web后端开发/Web后端实战.md",
     "未命名.canvas"
   ]
 }
