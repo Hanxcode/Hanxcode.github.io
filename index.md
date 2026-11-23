@@ -1,6 +1,5 @@
 ---
 layout: home
-pageClass: blog-home
 hero:
   name: Hanxcode
   text: Hanxcode的学习记录
@@ -23,19 +22,5 @@ features:
   - title: 生活杂文
     icon: 🥤
     details: <strong>人生有梦</strong> <br> <strong>各自精彩</strong>
-  - title: 博客搭建指南
-    icon: 🛠️
-    details: 从一篇 Markdown 笔记开始，把自己的博客发布到 GitHub Pages。
-    link: /guide/
-    linkText: 阅读搭建指南
-
-homeAside:
-  bio: 我是 Hanxcode，在这里整理 Java 后端笔记，也记录用 Spring AI 做应用时遇到的问题。
-  linksNote: 先分享两份搭建本站时用到的官方文档。
-  friendLinks:
-    - name: Vue 中文文档
-      url: https://cn.vuejs.org/
-    - name: VitePress 中文文档
-      url: https://vitepress.dev/zh/
 ---
 

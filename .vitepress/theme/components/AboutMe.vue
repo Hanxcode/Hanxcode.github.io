@@ -33,6 +33,7 @@ const skillGroups = [
 const activities = [
   { label: '整理 Java SE、Java Web 和 Redis 的学习笔记', link: '/backend/首页.html' },
   { label: '用 Spring AI 练习对话机器人和智能客服', link: '/agent/' },
+  { label: '把本站的搭建过程整理成一篇博客搭建指南', link: '/guide/' },
 ]
 </script>
 

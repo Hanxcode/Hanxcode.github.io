@@ -10,7 +10,7 @@ description: 从运行本站源码开始，换上自己的站名，写下第一�
 
 1. **文件决定页面。** 仓库根目录就是文档根目录：`index.md` 是首页，`agent/index.md` 对应 `/agent/`。Obsidian 只是写 Markdown 的一种编辑器，PicGo 只是把图片上传到图床的工具；用普通编辑器和随文章提交的本地图片，也能得到同样的网页。
 2. **配置决定内容怎么呈现。** VitePress 把 Markdown 编译为 Vue 页面。`.vitepress/config.mjs` 用 `withSidebar` 按栏目生成侧栏，用 `withMermaid` 支持流程图；Markdown 插件分别处理时间线、MathJax 公式和文章页首。站内的 `articleHeader` 插件会为普通文章插入标题下方的元信息，不必每篇手写。
-3. **主题决定信息出现在哪里。** `.vitepress/theme/index.js` 复用 VitePress 的默认布局 `DefaultTheme.Layout`，通过插槽放入自定义组件。例如首页右栏使用 `home-features-after` 插槽。文章的最后更新时间来自该文件的 Git 提交记录；字数和预计阅读时长则由浏览器根据正文与配图统计，不是手填的发布日期。
+3. **主题决定信息出现在哪里。** `.vitepress/theme/index.js` 复用 VitePress 的默认布局 `DefaultTheme.Layout`，例如通过 `doc-footer-before` 插槽在文章末尾放置「返回顶部」按钮。文章的最后更新时间来自该文件的 Git 提交记录；字数和预计阅读时长则由浏览器根据正文与配图统计，不是手填的发布日期。
 4. **发布只需要静态文件。** GitHub Actions 运行与本地相同的构建命令，将生成的 `.vitepress/dist/` 交给 Pages。读者访问的是其中的 HTML、样式和脚本，服务器不必为每次阅读运行 Node.js。
 
 ## 1. 在本机打开博客
@@ -30,24 +30,19 @@ npm run docs:dev
 
 | 想改什么 | 改哪里 |
 | --- | --- |
-| 首页大标题、副标题、按钮、卡片 | 根目录 `index.md` 的 `hero` 和 `features`；第 4 张卡片的 `link: /guide/` 指向本文 |
-| 首页右侧的自我介绍、友链及其说明 | 同一文件里的 `homeAside`；右栏组件是 `.vitepress/theme/components/HomeSidebar.vue`，只改文案或链接不必动组件 |
-| 「关于我」详情页 | `about/index.md` 使用 `.vitepress/theme/components/AboutMe.vue`；详细介绍、技术分组与近况在组件里 |
+| 首页大标题、副标题、按钮、卡片 | 根目录 `index.md` 的 `hero` 和 `features` |
+| 顶栏「关于我」 | `about/index.md` 使用 `.vitepress/theme/components/AboutMe.vue`；详细介绍、技术分组与近况在组件里 |
+| 顶栏「友情链接」 | `friends/index.md` 是独立的 Markdown 页面，直接在其正文中维护站名和链接 |
 | 浏览器标签标题、网站简介、标签图标 | `.vitepress/config.mjs` 的 `title`、`description`、`head` |
 | 顶栏站名、栏目、GitHub 链接 | 同一配置文件的 `themeConfig.siteTitle`、`nav`、`socialLinks` |
 
-**如何维护友链？** 编辑首页 `index.md` 文件顶部两条 `---` 之间已有的 `homeAside`，不要再加第二个同名区块。例如只保留一条参考链接：
+**如何维护友链？** 打开 `friends/index.md`。目前友站区域尚未收录博客；另一小节里的 Vue、VitePress 官方文档是建站参考资料，不是互换的友链。有朋友的博客要收录时，用下面这样的 Markdown 列表项替换友站区域的空状态说明，记得把示例站名、网址都换成对方的真实主页：
 
-```yaml
-homeAside:
-  bio: 我在这里记录后端学习和做项目时遇到的问题。
-  linksNote: 这里收录写博客时常用的参考资料。
-  friendLinks:
-    - name: VitePress 官方文档
-      url: https://vitepress.dev/zh/
+```md
+- [朋友的博客名](https://example.com/)
 ```
 
-本站默认的两项都是官方文档，不代表已经与这些网站交换友链。若要收录朋友的博客，请把 `name` 和 `url` 换成对方的站名与可访问的真实主页，并同步调整 `linksNote`。暂时不放链接，把整个列表（含条目）换成一行 `friendLinks: []` 即可。
+「关于我」和「友情链接」是两个独立的导航项，分别指向 `/about/` 和 `/friends/`。如果要调整它们在「主页」左边的排列顺序，调整 `themeConfig.nav` 中对应项的顺序即可；新增一条友链只需改正文，不必改导航。建站指南本身位于 `guide/index.md`，网址是 `/guide/`。
 
 改标签图标时，可以把自己的图片放在 `public/`。例如文件是 `public/favicon.png`，在配置的 `head` 中把图标的 `href` 写成 `` `${base}favicon.png` ``。不要把 `public` 写进网址；这里的 `base` 是站点部署路径，在第 4 步确定。
 

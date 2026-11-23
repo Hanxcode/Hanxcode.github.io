@@ -2,7 +2,7 @@
 
 这个博客由 VitePress 把仓库里的 Markdown 笔记生成网页。Obsidian 是可选的编辑器，PicGo 是可选的图床工具；用其他编辑器写的 `.md` 和本地图片也可以直接发布。
 
-第一次建站？从[用 VitePress 搭建自己的博客](../guide/index.md)开始：先在本机跑起来，再换上自己的介绍和友链，最后发布到 GitHub Pages。
+第一次建站？从[用 VitePress 搭建自己的博客](../guide/index.md)开始，了解本地预览、添加文章和发布到 GitHub Pages 的步骤。顶栏的「关于我」和「友情链接」是两个独立页面；收录朋友的博客时，直接在 `friends/index.md` 中添加 Markdown 链接即可。
 
 ## 把已有笔记放上来
 

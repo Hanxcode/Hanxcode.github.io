@@ -189,6 +189,8 @@
   },
   "active": "cf8d2ee8bfa97fc1",
   "lastOpenFiles": [
+    "friends/index.md",
+    "friends",
     "about/index.md",
     "about",
     "guide/index.md",
@@ -229,7 +231,6 @@
     "backend/java/JavaWeb/后端/数据库.md",
     "backend/java/JavaWeb/后端/数据库.assets",
     "backend/java/JavaWeb/后端/Web基础.md",
-    "backend/java/JavaWeb/后端/Web基础.assets",
     "backend/java/JavaWeb/后端/Maven.md",
     "backend/java/JavaWeb/Web后端开发/后端Web进阶（SpringBoot原理）.md",
     "backend/java/JavaWeb/Web后端开发/后端Web进阶（AOP）.md",
