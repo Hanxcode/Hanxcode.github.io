@@ -77,6 +77,8 @@ LangChain 的价值在于把这些重复出现的能力抽象成组件。例如�
 
 可以先从下面几个层次理解：
 
+
+
 ![img](01-LangChain.assets/01-langchain-architecture.png)
 
 各部分的职责可以这样理解：
@@ -331,7 +333,7 @@ model = ChatDeepSeek(
 
 一次普通调用可以抽象成下面的过程：
 
-![img](01-LangChain.assets/02-model-call-sequence.png)
+![img](LangChain.assets/02-model-call-sequence.png)
 
 在代码层面，最常见的调用方法有：
 
