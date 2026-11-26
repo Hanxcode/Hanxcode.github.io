@@ -38,8 +38,8 @@
 LangChain 1.x 将 Agent 放在框架核心位置，但并不意味着所有应用都必须使用 Agent。单次问答、固定流程的数据提取，直接调用模型往往更简单。
 
 ##  为什么需要 LangChain
-   - LangChain 的整体架构
-   - LangChain 1.x 的主要变化
+## LangChain 的整体架构
+## LangChain 1.x 的主要变化
 
 ## Model 模型
    - Chat Model
