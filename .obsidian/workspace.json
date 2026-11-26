@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "agent/LangGraph/未命名.md",
+                "file": "agent/LangGraph/LangChain.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "LangChain"
             }
           }
         ]
@@ -196,7 +196,7 @@
     "guide/index.md",
     "guide",
     "backend/java/redis/Redis数据库.md",
-    "agent/LangGraph/未命名.md",
+    "agent/LangGraph/LangChain.md",
     "backend/java/JavaSE/JavaIO/IO流——黑马程序员.md",
     "backend/首页.md",
     "agent/index.md",
