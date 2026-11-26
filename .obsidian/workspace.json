@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "agent/LangGraph.md",
+                "file": "agent/LangChain.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LangGraph"
+              "title": "LangChain"
             }
           }
         ]
@@ -189,8 +189,16 @@
   },
   "active": "cf8d2ee8bfa97fc1",
   "lastOpenFiles": [
-    "agent/LangChain.md",
     "agent/LangGraph.md",
+    "agent/images/07-langchain-learning-map.png",
+    "agent/images/06-todo-agent-workflow.png",
+    "agent/images/05-middleware-lifecycle.png",
+    "agent/images/04-agent-execution-loop.png",
+    "agent/images/03-tool-message-sequence.png",
+    "agent/images/02-model-call-sequence.png",
+    "agent/images/01-langchain-architecture.png",
+    "agent/images",
+    "agent/LangChain.md",
     "agent/SpringAI/SpringAI-智能客服.md",
     "agent/SpringAI/SpringAI-哄哄模拟器.md",
     "agent/SpringAI/大模型应用开发.md",
@@ -211,17 +219,10 @@
     "未命名.md",
     "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/fJKz3FWclm9orVT.png",
     "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/E1Pf2pGv4b9Lj7t.png",
-    "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/btfjlJhDuWrSXYi.png",
-    "backend/java/JavaSE/数据结构（Java版）/数据结构（Java版）.assets/aoBjrR5bPqWzCel.png",
-    "backend/java/redis/Redis数据库.assets/VK3k7EAZDT1fjIo.jpg",
-    "backend/java/redis/Redis数据库.assets/JYiOHBdtT7jC98R.png",
-    "backend/java/redis/Redis数据库.assets/image1-20260507102519601.png",
-    "backend/java/redis/Redis数据库.assets/JKDHFTiCr2t5Oj9.png",
     "backend/java/redis/Redis数据库.assets",
     "backend/java/redis",
     "backend/java/JavaSE/多线程与反射/多线程与反射.md",
     "backend/java/JavaSE/多线程与反射",
-    "backend/java/JavaWeb/Web项目部署/Web项目部署（Linux）.assets/软件安装1.png",
     "backend/java/JavaWeb/前端/Web前端.md",
     "backend/java/JavaWeb/前端/Vue3.md",
     "backend/java/JavaWeb/Web项目部署/Web项目部署（Linux）.md",
@@ -229,12 +230,10 @@
     "backend/java/JavaWeb/Web项目部署/Web项目部署（Docker）.md",
     "backend/java/JavaWeb/Web项目部署/Web项目部署（Docker）.assets",
     "backend/java/JavaWeb/后端/数据库.md",
-    "backend/java/JavaWeb/后端/数据库.assets",
     "backend/java/JavaWeb/后端/Web基础.md",
     "backend/java/JavaWeb/后端/Maven.md",
     "backend/java/JavaWeb/Web后端开发/后端Web进阶（SpringBoot原理）.md",
     "backend/java/JavaWeb/Web后端开发/后端Web进阶（AOP）.md",
-    "backend/java/JavaWeb/Web后端开发/Web后端开发（登录）.md",
     "未命名.canvas"
   ]
 }
