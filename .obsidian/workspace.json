@@ -189,6 +189,7 @@
   },
   "active": "cf8d2ee8bfa97fc1",
   "lastOpenFiles": [
+    "agent/LangChain.assets/06-todo-agent-workflow.png",
     "agent/LangChain.assets/05-middleware-lifecycle.png",
     "agent/LangChain.assets/04-agent-execution-loop.png",
     "agent/LangChain.assets/03-tool-message-sequence.png",
@@ -201,7 +202,6 @@
     "agent/images/05-middleware-lifecycle.png",
     "agent/images/04-agent-execution-loop.png",
     "agent/images/03-tool-message-sequence.png",
-    "agent/images/02-model-call-sequence.png",
     "agent/images",
     "agent/LangChain.md",
     "agent/SpringAI/SpringAI-智能客服.md",
