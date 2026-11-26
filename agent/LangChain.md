@@ -1,11 +1,11 @@
 # LangChain
 
-##
 
-# LangChain 学习笔记
 
 ##  LangChain 简介
-   - LangChain 是什么
+### LangChain 是什么
+
+
    - 为什么需要 LangChain
    - LangChain 的整体架构
    - LangChain 1.x 的主要变化

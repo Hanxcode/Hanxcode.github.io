@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "agent/LangGraph/LangChain.md",
+                "file": "agent/LangChain.md",
                 "mode": "source",
                 "source": false
               },
@@ -189,6 +189,8 @@
   },
   "active": "cf8d2ee8bfa97fc1",
   "lastOpenFiles": [
+    "agent/LangGraph.md",
+    "agent/LangChain.md",
     "friends/index.md",
     "friends",
     "about/index.md",
@@ -196,11 +198,9 @@
     "guide/index.md",
     "guide",
     "backend/java/redis/Redis数据库.md",
-    "agent/LangGraph/LangChain.md",
     "backend/java/JavaSE/JavaIO/IO流——黑马程序员.md",
     "backend/首页.md",
     "agent/index.md",
-    "agent/未命名.md",
     "agent/LangGraph",
     "agent/SpringAI/SpringAI-对话机器人.md",
     "agent/SpringAI/大模型应用开发.md",
