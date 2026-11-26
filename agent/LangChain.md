@@ -77,7 +77,7 @@ LangChain 的价值在于把这些重复出现的能力抽象成组件。例如�
 
 可以先从下面几个层次理解：
 
-![01-langchain-architecture](LangChain.assets/01-langchain-architecture.png)
+![01-langchain-architecture](https://raw.githubusercontent.com/Hanxcode/image-host/main/01-langchain-architecture.png)
 
 
 
@@ -493,7 +493,7 @@ ToolMessage 不是用户输入，也不是模型最终回复。它是工具与�
 
 一次完整交互可能包含以下消息：
 
-![img](LangChain.assets/03-tool-message-sequence.png)
+![img](https://raw.githubusercontent.com/Hanxcode/image-host/main/03-tool-message-sequence.png)
 
 对应的消息列表可以抽象成：
 
@@ -1126,7 +1126,7 @@ print(result["messages"][-1].content)
 
 可以把一次 Agent 运行理解为：
 
-![img](LangChain.assets/04-agent-execution-loop.png)
+![img](https://raw.githubusercontent.com/Hanxcode/image-host/main/04-agent-execution-loop.png)
 
 例如用户问：“帮我查询当前待办任务。”
 
@@ -1316,7 +1316,7 @@ agent = create_agent(
 
 把前面学到的执行流程和 Middleware 放在一起，就更容易理解它的用途：
 
-![img](LangChain.assets/05-middleware-lifecycle.png)
+![img](https://raw.githubusercontent.com/Hanxcode/image-host/main/05-middleware-lifecycle.png)
 
 常见钩子可以这样区分：
 
@@ -1442,7 +1442,7 @@ LangChain 同时提供 `stream()` 和 `astream()`。在异步 Web 服务中，�
 
 系统整体流程如下：
 
-![img](01-LangChain.assets/06-todo-agent-workflow.png)
+![img](https://raw.githubusercontent.com/Hanxcode/image-host/main/06-todo-agent-workflow.png)
 
 为了让示例能够独立运行，任务数据暂时保存在 Python 列表中。这意味着程序退出后数据就会消失。它只是用于学习工具调用和 Agent 执行过程，不是生产环境的数据存储方案。
 
@@ -2005,7 +2005,7 @@ python main.py
 
 回顾这篇文章，LangChain 1.x 的核心知识可以串成一条比较清晰的链路：
 
-![img](LangChain.assets/06-todo-agent-workflow.png)
+![img](https://raw.githubusercontent.com/Hanxcode/image-host/main/06-todo-agent-workflow.png)
 
 这张图表示的是学习和开发过程中各个组件之间的关系，并不意味着它们在每个项目中都必须按照固定顺序全部使用。
 
