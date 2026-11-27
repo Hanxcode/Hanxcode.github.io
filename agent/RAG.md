@@ -727,7 +727,7 @@ python rag_chat.py
 
 **RAG 是否能彻底解决幻觉？** 不能。它提供外部证据，但无法保证检索、理解和生成每一步都正确。答案仍需评估，重要场景还要有拒答和人工审核机制。
 
-## 总结
+**** 
 
 RAG 的核心链路可以概括为：**文档切分 → Embedding → 向量存储 → 检索 → 上下文组装 → 模型生成**。
 
@@ -735,20 +735,4 @@ RAG 的核心链路可以概括为：**文档切分 → Embedding → 向量存�
 
 标准 RAG 使用固定检索流程；当问题需要多轮检索、动态选择数据源或复杂推理时，再考虑把 Retriever 封装成工具，扩展为 Agentic RAG。关于 StateGraph 和 Agent 工作流，可以继续阅读此前的 LangGraph 实战文章。
 
-## 参考资料
 
-1. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks（原始论文）](https://arxiv.org/abs/2005.11401)
-2. [LangChain：RAG 与检索教程](https://docs.langchain.com/oss/python/langchain/rag)
-3. [LangChain：Chroma 向量库集成](https://docs.langchain.com/oss/python/integrations/vectorstores/chroma)
-4. [LangChain：递归文本切分](https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter)
-5. [BAAI：bge-small-zh-v1.5 模型卡](https://huggingface.co/BAAI/bge-small-zh-v1.5)
-6. [BAAI：BGE Reranker 模型说明](https://huggingface.co/BAAI/bge-reranker-base)
-7. [Microsoft：RAG 方案设计与评估](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-solution-design-and-evaluation-guide)
-8. [Microsoft：RAG 文档切分](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-chunking-phase)
-9. [Microsoft：RAG 信息检索与重排序](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-information-retrieval)
-10. [Ragas：RAG 评估指标](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/)
-11. [DeepSeek：首次调用 API](https://api-docs.deepseek.com/zh-cn/)
-12. [DeepSeek：模型与价格](https://api-docs.deepseek.com/zh-cn/quick_start/pricing/)
-13. [DeepSeek：思考模式](https://api-docs.deepseek.com/zh-cn/guides/thinking_mode/)
-14. [LangChain：DeepSeek 模型集成](https://reference.langchain.com/python/langchain-deepseek/chat_models/ChatDeepSeek)
-15. [OpenSearch：RRF 排名融合](https://docs.opensearch.org/latest/vector-search/ai-search/hybrid-search/rrf/)

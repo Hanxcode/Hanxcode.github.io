@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "agent/LangGraph.md",
+                "file": "agent/RAG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LangGraph"
+              "title": "RAG"
             }
           }
         ]
@@ -189,6 +189,7 @@
   },
   "active": "cf8d2ee8bfa97fc1",
   "lastOpenFiles": [
+    "agent/LangGraph.md",
     "agent/index.md",
     "agent/LangChain.md",
     "agent/SpringAI/SpringAI-智能客服.md",
@@ -200,7 +201,6 @@
     "guide/index.md",
     "node_modules/@algolia/autocomplete-core/README.md",
     "public/header1.jpg",
-    "agent/LangGraph.md",
     "agent/LangChain.assets/06-todo-agent-workflow.png",
     "agent/LangChain.assets/05-middleware-lifecycle.png",
     "agent/LangChain.assets/04-agent-execution-loop.png",
