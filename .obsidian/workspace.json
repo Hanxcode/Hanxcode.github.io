@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "agent/index.md",
+                "file": "agent/LangGraph从基础图到RAG-Agent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "LangGraph从基础图到RAG-Agent"
             }
           }
         ]
@@ -189,8 +189,8 @@
   },
   "active": "cf8d2ee8bfa97fc1",
   "lastOpenFiles": [
-    "agent/LangChain.md",
     "agent/index.md",
+    "agent/LangChain.md",
     "agent/SpringAI/SpringAI-智能客服.md",
     "agent/SpringAI/大模型应用开发.md",
     "agent/SpringAI/SpringAI-对话机器人.md",
